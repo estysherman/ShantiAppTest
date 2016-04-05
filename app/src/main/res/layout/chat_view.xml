@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chat_bg"
+    tools:context="webit.android.shanti.chat.chatManager.ui.ChatFragment">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/chatRetryArea"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_dark"
+            android:layout_gravity="center"
+            android:text="@string/groupChatIsNotAvailable" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatRetryLoad"
+            android:textColor="@color/purple_home"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:text="@string/groupChatIsNotAvailableRetry" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/chatLoadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:id="@+id/chatHistoryList"
+        style="@style/general_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chatTools"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20dp"
+        android:layout_below="@+id/chatActionBar" />
+
+    <RelativeLayout
+        android:id="@+id/chatTools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/chatSendClick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/send_right" />
+
+        <webit.android.shanti.customViews.CustomEditText
+            android:id="@+id/chatMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="90dp"
+            android:background="@color/very_light_purple"
+            android:enabled="false"
+            android:maxHeight="70dp" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/chatAttachmentBtn"
+            android:layout_width="30dp"
+            android:enabled="false"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_add_attachment" />
+
+    </RelativeLayout>
+</RelativeLayout>

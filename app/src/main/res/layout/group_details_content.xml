@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_details_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="148.5dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+
+            <webit.android.shanti.general.horizontallistview.HorizontalListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:widget="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/membersList"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_gravity="start"
+                android:divider="@color/transparent"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                widget:dividerWidth="8dp"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/linear_have_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:id="@+id/groupMeetingPoint"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/membersList"
+                                android:layout_marginBottom="17dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/group_add_meeting_point_selector" />
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                style="@style/general_Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/membersList"
+                                android:layout_toStartOf="@+id/addGroupMeetingPointIcon"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/groupsMeetingPoint"
+                                android:textColor="@color/gray"
+                                android:textSize="17dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end">
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                android:id="@+id/groupAddress"
+                                style="@style/general_Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/membersList"
+                                android:layout_toStartOf="@+id/location_icon"
+                                android:text="groupAddress"
+                                android:textColor="@color/gray"
+                                android:textSize="15dp" />
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                android:id="@+id/location_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/membersList"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/addGroupIconLocation"
+                                android:textSize="15dp"
+                                app:fontName="fontawesome-webfont.ttf"
+                                app:fontStyle="Icon" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--<webit.android.shanti.customViews.CustomTextView
+                        android:layout_below="@+id/groupMeetingPoint"
+                        android:id="@+id/groupAddFriends"
+                        style="@style/general_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="17dp"
+                        android:layout_toLeftOf="@+id/groupAddMemberIcon"
+                        android:text="@string/groupsAddFriends"
+                        android:textColor="@color/gray"
+                        android:textSize="17dp" />-->
+                    <!--<ScrollView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<webit.android.shanti.customViews.AddMembersCustomView-->
+                                <!--android:id="@+id/groupAddFriends"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="17dp"-->
+                                <!--android:layout_marginEnd="10dp"-->
+                                <!--android:layout_marginStart="10dp"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:visibility="gone" />-->
+                        <!--</LinearLayout>-->
+                    <!--</ScrollView>-->
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/groupMoreAbout"
+                        style="@style/general_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/groupAddress"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginTop="10dp"
+                        android:text="עוד על קבוצת צביקה "
+                        android:textColor="@color/green"
+                        android:textSize="17dp" />
+
+                    <!--<webit.android.shanti.customViews.CustomButton-->
+                        <!--android:id="@+id/groupAddSave"-->
+                        <!--style="@style/general_button"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_below="@id/groupAddFriends"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="שמור"-->
+                        <!--android:visibility="gone" />-->
+
+                </LinearLayout>
+
+                <webit.android.shanti.customViews.AddMembersCustomView
+                    android:id="@+id/groupEditAddMembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    app:pageScroller="@+id/groupEditPageScroller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_have_no_members"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/addMembersNoMembers"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+
+                    <webit.android.shanti.customViews.AddMembersCustomView
+                        android:id="@+id/groupDetailsContentAddMembers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/groupDetailsContentAdd"
+                        style="@style/general_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/addMembersAttach" />
+                </RelativeLayout>
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:id="@+id/groupMoreAbout1"
+                    style="@style/general_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/green"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

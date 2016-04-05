@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/spinnerBaseRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/spinnerDialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple_home"
+        android:gravity="start|center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <webit.android.shanti.customViews.CustomEditText
+        android:id="@+id/spinnerDialogSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinnerDialogTitle"
+        android:background="@color/purple_sgalgal"
+        android:gravity="start|center_vertical"
+        android:inputType="textVisiblePassword"
+        android:paddingEnd="10dp"
+        app:fontStyle="Thin"
+        android:paddingStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/spinnerDialogListContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDialogSearch"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/spinnerDialogList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:divider="@color/purple_home"
+            android:dividerHeight="1dp"
+
+            android:visibility="gone" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/spinnerDialogEmptyList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="no items" />
+
+    </LinearLayout>
+
+    <webit.android.shanti.customViews.CustomButton
+        android:id="@+id/spinnerDialogOkBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/spinnerDialogListContainer"
+        android:layout_gravity="bottom"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

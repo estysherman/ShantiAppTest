@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerBaseRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/list_sctr">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/spinnerDialogTextRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/spinnerDialogIcon"
+        android:text="sssssssssssss"
+        android:textSize="20dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/spinnerDialogTextRowPhonePrefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:text="sssssssssssss"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/spinnerDialogIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="19.5dp"
+        android:background="@drawable/v_select" />
+</RelativeLayout>

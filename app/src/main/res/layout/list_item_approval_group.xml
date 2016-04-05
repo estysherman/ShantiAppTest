@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/approvalGroupImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/user_photo"
+        app:sriv_border_color="@color/green"
+        app:sriv_border_width="1dp"
+        app:sriv_left_bottom_corner_radius="10dp"
+        app:sriv_left_top_corner_radius="10dp"
+        app:sriv_right_bottom_corner_radius="10dp"
+        app:sriv_right_top_corner_radius="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/approvalGroupImage"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/approvalGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+
+
+        </webit.android.shanti.customViews.CustomTextView>
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/approvalJoinYouRequests">
+
+        </webit.android.shanti.customViews.CustomTextView>
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/approvalGroupDatedCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+
+        </webit.android.shanti.customViews.CustomTextView>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/approvalOK"
+        style="@style/purple_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/approvalGroupImage"
+        android:layout_toEndOf="@+id/approvalSeparator"
+        android:clickable="true"
+        android:text="@string/approvalOK"
+        android:textSize="15dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/approvalSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/approvalGroupImage"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@+id/aprovalCancellation"
+        android:text="|"
+        android:textSize="15dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/aprovalCancellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/approvalGroupImage"
+        android:clickable="true"
+        android:text="@string/approvalCancellation"
+        android:textColor="@color/gray_dark"
+        android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

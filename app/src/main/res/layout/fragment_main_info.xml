@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoMainMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/info_bg"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.FragmentMainInfo">
+
+    <include layout="@layout/info_action_bar" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/infoWillBeSupportedInTheFuture"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/infoCurrentCategory"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/infoMainTable"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/infoItemsTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

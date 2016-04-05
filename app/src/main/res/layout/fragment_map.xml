@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/map_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="webit.android.shanti.main.map.MapFragment">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mapFooter">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:enabled="true"/>
+
+            <Button
+
+                android:id="@+id/mapGpsSettings"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="57dp"
+                android:background="@color/white"
+                android:textColor="@color/gray_dark"
+                android:alpha="0.8"
+                android:textSize="6sp"
+                android:layout_alignParentEnd="true"
+                android:text="@string/mapGpsSettingsOff" />
+
+
+        </RelativeLayout>
+
+        <webit.android.shanti.main.map.MapFooterManager
+            android:id="@+id/mapFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</LinearLayout>

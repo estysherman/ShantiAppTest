@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="edit_text_padding">15dp</dimen>
+    <dimen name="edit_text_paddingTop">10dp</dimen>
+    <dimen name="edit_text_paddingBottom">10dp</dimen>
+    <dimen name="profile_group_name_textSize">16.5sp</dimen>
+    <dimen name="profile_group_text_textSize">15sp</dimen>
+    <dimen name="member_profile_text_textSize">15.5sp</dimen>
+    <dimen name="member_profile_title_textSize">20sp</dimen>
+    <dimen name="add_member_text_textSize">15sp</dimen>
+    <dimen name="add_member_text_paddingTop">0sp</dimen>
+    <dimen name="edit_group_text_textSize">15sp</dimen>
+    <dimen name="chat_group_details_marginTop">148dp</dimen>
+
+</resources>

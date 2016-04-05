@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_footer_groups_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="49.5dp"
+    android:layout_below="@+id/map_footer_me_create_meeting_point"
+    android:layout_marginTop="10dp"
+    android:background="@color/green"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/map_footer_purple_public_message"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:width="152.5dp"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:text="@string/mapFooterPublicMessage"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="|"
+        android:textColor="@color/purple_shines"
+        android:textSize="30dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/map_footer_purple_groups"
+        android:layout_height="fill_parent"
+        android:width="152.5dp"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:text="@string/mapFooterGroup"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="|"
+        android:textColor="@color/purple_shines"
+        android:textSize="30dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/map_footer_purple_add_group"
+        android:layout_width="49.5dp"
+        android:layout_height="fill_parent"
+        android:background="@color/purple_home"
+        android:gravity="center"
+        android:text="@string/mapFooterPlusGroup"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        app:fontStyle="Icon"
+        app:fontName="fontawesome-webfont.ttf" />
+
+</LinearLayout>

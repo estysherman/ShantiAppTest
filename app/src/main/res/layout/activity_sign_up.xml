@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_enterscreens"
+    tools:context="webit.android.shanti.login.signin.SignUpActivity"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        <!---->
+        <LinearLayout
+            android:id="@+id/linearSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_enterscreens"
+            android:orientation="vertical">
+
+        <include layout="@layout/signin_action_bar" />
+
+
+        <FrameLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <webit.android.shanti.customViews.AnimationView
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

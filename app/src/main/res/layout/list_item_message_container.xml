@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/contentMeDeleteRightToLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp"
+        android:background="@color/red"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/deleteMessageRightToLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:background="@color/red"
+            android:layout_alignParentEnd="true"
+            android:text="delete"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/contentMeDeleteLeftToRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/deleteMessageLeftToRight"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:background="@color/red"
+            android:layout_alignParentStart="true"
+            android:text="delete"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/contentMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp"
+        android:visibility="visible">
+        <!--text-->
+        <RelativeLayout
+            android:id="@+id/linear_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:weightSum="5">
+            <!--android:layout_alignParentLeft="true"android:gravity="left"android:layout_centerInParent="true"-->
+            <Button
+                android:id="@+id/deleteMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:background="@color/red"
+                android:layout_alignParentStart="true"
+                android:text="delete"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/txtMessageBg"
+                android:layout_width="@+id/txtMessageMe"
+                android:layout_height="@+id/txtMessageMe"
+                android:src="@drawable/chat_purple"
+                android:layout_alignTop="@+id/txtMessageMe"
+                android:layout_alignBottom="@id/txtMessageMe"
+                android:layout_alignLeft="@id/txtMessageMe"
+                android:layout_alignRight="@id/txtMessageMe"
+                android:scaleType="fitXY"/>
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/txtMessageMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:text="txtMessage"
+                android:textColor="@color/black"
+                />
+            <!--android:background="@drawable/chat_purple"
+            android:layout_margin="15dp"
+             android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"-->
+        </RelativeLayout>
+
+
+        <!--attachment image-->
+        <RelativeLayout
+            android:id="@+id/attachmentMe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/chat_purple"
+            android:gravity="right"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/attachmentImageMe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/user_photo"
+                android:scaleType="centerCrop"/>
+
+            <ProgressBar
+                android:id="@+id/attachmentProgressDownloadMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/attachmentImageDownloadMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chat_download_image" />
+        </RelativeLayout>
+
+        <!--my-->
+        <LinearLayout
+            android:id="@+id/linear_image_outer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/linear_img"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/friendImageMe"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_photo"
+                    app:sriv_border_color="@color/gray"
+                    app:sriv_border_width="1dp"
+                    app:sriv_left_bottom_corner_radius="10dp"
+                    app:sriv_left_top_corner_radius="10dp"
+                    app:sriv_right_bottom_corner_radius="10dp"
+                    app:sriv_right_top_corner_radius="10dp" />
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:id="@+id/itemMessageFriendNameMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    android:paddingTop="1dp"
+                    android:text="friendNameaa"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:id="@+id/itemMessageTxtInfoMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:text="txtfgfnfo"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/contentMyChoose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp"
+        android:background ="#88676767"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

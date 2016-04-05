@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profileMemberShantiName">שם משתמש: %1$s</string>
+    <string name="profileMemberAgeMale">%1$s | %2$d</string>
+    <string name="profileMemberAgeFemale">%1$s | %2$d</string>
+    <string name="profileMemberPersonalArea">פרופיל אישי</string>
+    <string name="profileMemberCountry">ארץ מוצא: </string>
+    <string name="profileMemberLanguages">דובר שפות:</string>
+    <string name="profileMemberReligion">דת:</string>
+    <string name="profileMemberLevelReligion">יחס לדת:</string>
+    <string name="profileMemberJob">מקצוע:</string>
+    <string name="profileMemberHobby">תחביב:</string>
+    <string name="profileMemberMoreInfo">עוד משהו על %1$s:</string>
+
+
+</resources>

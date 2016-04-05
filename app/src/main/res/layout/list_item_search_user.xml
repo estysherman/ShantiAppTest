@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="start"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/searchUserImage"
+        android:layout_width="52.5dp"
+        android:layout_height="52.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="14dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_photo"
+        app:sriv_border_color="@color/red"
+        app:sriv_border_width="2dp"
+        app:sriv_left_bottom_corner_radius="10dp"
+        app:sriv_left_top_corner_radius="10dp"
+        app:sriv_right_bottom_corner_radius="10dp"
+        app:sriv_right_top_corner_radius="10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/searchUserName"
+            style="@style/search_user_text"
+            android:text="מימי" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/searchUserTime"
+            style="@style/search_user_text"
+            android:text="10:45" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/searchUserFar"
+            style="@style/search_user_text"
+            android:text="22.3 קמ, איטליה" />
+
+    </LinearLayout>
+
+
+    <!--<View style="@style/shadow_line" />-->
+</LinearLayout>

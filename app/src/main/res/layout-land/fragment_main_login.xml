@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="webit.android.shanti.login.signin.MainLoginFragment">
+
+    <LinearLayout
+        android:id="@+id/facebookGoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:paddingRight="15dp"
+                android:gravity="center"
+                android:layout_weight="2.5"
+              >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/shanti_logo"
+                    android:scaleType="fitXY"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="25dp"
+                    android:paddingLeft="10dp"
+                   >
+                <!--<webit.android.shanti.customViews.CustomTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:text="@string/mainLoginChooseOption"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:visibility="gone" />-->
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebook_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingBottom="10.5dp"
+                    android:paddingTop="10.5dp" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="43.5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    tools:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/mainLoginSignIn"
+                        android:layout_width="0dip"
+                        android:layout_height="43.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/purple_rect"
+                        android:text="@string/login"
+                        android:textColor="@color/white" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/mainLoginCreateUser"
+                        android:layout_width="0dip"
+                        android:layout_height="43.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/purple_rect"
+                        android:text="@string/createUser"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/mainLoginMoreOptions"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainLoginAnimationLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<webit.android.shanti.customViews.AnimationView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="4dp"-->
+    <!--android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

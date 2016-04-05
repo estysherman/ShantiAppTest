@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite_base"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.chat.chatManager.ui.ChatFragment">
+
+    <RelativeLayout
+        android:id="@+id/chatActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_default_padding_material">
+
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/chatUserImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_photo"
+            app:sriv_border_color="@color/green"
+            app:sriv_border_width="0.8dp"
+            app:sriv_left_bottom_corner_radius="10dp"
+            app:sriv_left_top_corner_radius="10dp"
+            app:sriv_right_bottom_corner_radius="10dp"
+            app:sriv_right_top_corner_radius="10dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/chatTitleName"
+            style="@style/green_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:text="gghhohighgudytreert"
+            android:textSize="30dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/chatBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+android:gravity="center|bottom"
+            android:text="@string/groupsIconAngleRight"
+            android:textAlignment="center"
+            android:textColor="@color/green_home"
+            android:textSize="35dp"
+            app:fontStyle="Icon" />
+
+        <ImageView
+            android:id="@+id/deleteImg"
+            style="@style/green_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/chatBack"
+            android:src="@drawable/delete"
+            android:visibility="gone" />
+        
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/memberInGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/moreAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/profileMemberMoreInfo"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <webit.android.shanti.customViews.ChatView
+        android:id="@+id/chatView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/chatActionBar" />
+
+
+</LinearLayout>

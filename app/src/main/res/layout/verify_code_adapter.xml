@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="97dp"
+    android:layout_height="94.5dp"
+    android:background="@color/white"
+    android:gravity="center"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:background="@color/purple_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/verifyDigit"
+            style="@style/verification_code_button"
+            android:layout_gravity="center"
+            android:text="0" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/verifyCancel"
+            style="@style/verification_code_button"
+            android:background="@drawable/verifivation_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

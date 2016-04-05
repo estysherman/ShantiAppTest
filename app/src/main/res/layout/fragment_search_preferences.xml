@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_search_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.login.signin.CreateUserActivity">
+
+    <include layout="@layout/setting_search_preferences" />
+
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="@string/userPrefNote"
+        android:textColor="@color/purple_home"
+        android:textSize="16dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<webit.android.shanti.customViews.SwitchView-->
+            <!--android:id="@+id/searchPrefLanguage"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:defText="@string/userPrefLanguage"-->
+            <!--app:spinner_type="multi" />-->
+
+        <webit.android.shanti.customViews.SwitchView
+            android:id="@+id/searchPrefCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:defText="@string/userPrefCountry"
+            app:search_hint_sv="@string/signUpCountrySearchHint"
+            app:spinner_type="multi" />
+
+        <webit.android.shanti.customViews.SwitchView
+            android:id="@+id/searchPrefAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:defText="@string/userPrefAge"
+            app:spinner_type="multi" />
+
+        <!--<webit.android.shanti.customViews.SwitchView-->
+            <!--android:id="@+id/searchPrefGender"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:defText="@string/userPrefGender"-->
+            <!--app:spinner_type="single" />-->
+
+        <webit.android.shanti.customViews.SwitchView
+        android:id="@+id/searchPrefReligion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:defText="@string/userPrefReligion"
+        app:spinner_type="multi" />
+
+        <!-- <webit.android.shanti.customViews.SwitchView
+             android:id="@+id/searchPrefForReligion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:defText="@string/userPrefLevelReligion"
+             app:spinner_type="single" />-->
+
+        <webit.android.shanti.customViews.SwitchView
+            android:id="@+id/searchPrefRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:defText="@string/userPrefRadius"
+            app:spinner_type="single" />
+
+
+        <webit.android.shanti.customViews.CustomButton
+            android:id="@+id/searchPrefOkBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/light_purple_rect"
+            android:text="@string/userPrefOk"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

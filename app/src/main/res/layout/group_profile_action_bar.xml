@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="63dp"
+    android:layout_alignParentTop="true"
+    android:padding="10dp"
+    android:paddingEnd="10dp"
+    android:background="@color/purple_home">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/profileGroupSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/groupProfileSaveChanges"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/profileGroupEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/groupProfileEdit"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_centerInParent="true"
+        android:id="@+id/profileGroupActionTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/groupProfile"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/profileGroupActionBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingStart="9.5dp">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/actionBackIcon"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="@string/actionBarLeft"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

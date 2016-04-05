@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/map_footer_up_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/purple_home"
+            android:orientation="vertical" />
+
+
+        <ViewFlipper
+            android:id="@+id/map_footer_view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:measureAllChildren="false"
+
+            android:orientation="vertical">
+
+            <include layout="@layout/map_footer_user" />
+
+            <include layout="@layout/map_footer_me" />
+
+            <include layout="@layout/map_footer_create_meeting_point" />
+
+            <include layout="@layout/map_footer_meeting_point_details" />
+        </ViewFlipper>
+
+
+        <include layout="@layout/map_footer_purple_buttom_footer"></include>
+    </LinearLayout>

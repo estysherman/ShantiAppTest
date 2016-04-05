@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.main.groups.ApprovalGroupFragment">
+
+    <include layout="@layout/group_action_bar"/>
+    <ListView
+        style="@style/general_list_view"
+        android:id="@+id/approvalGroupsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/approvalGroupEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="168dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_approval_group_list"/>
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:gravity="center"
+            android:layout_marginTop="241dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:text="@string/approvalEmptyList"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

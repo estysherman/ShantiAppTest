@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="117.5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/map_footer_me_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.5dp"
+            android:text="@string/mapFooterYouHear"
+            android:textColor="@color/purple_home"
+            android:textSize="26.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/map_footer_me_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/map_footer_me_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:gravity="center|start"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/map_footer_me_open_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map_footer_purple_chat_selector" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/map_footer_me_notification_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/map_footer_notification_counter_btn"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/map_footer_me_create_meeting_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_footer_meeting_point_selector" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

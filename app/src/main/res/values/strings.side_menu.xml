@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sideMenuNews">מה חדש?</string>
+    <string name="sideMenuSelfArea">איזור אישי</string>
+    <string name="sideMenuGroups">קבוצות</string>
+    <string name="sideMenuNotifications">הודעות</string>
+    <string name="sideMenuPraveNotifications">הודעות קודמות</string>
+    <string name="sideMenuApprovalNotifications">בקשות הצטרפות שקיבלתי</string>
+    <string name="sideMenuInformation">מידע</string>
+    <string name="sideMenuMain">מפה</string>
+    <string name="sideMenuSearch">חיפוש אנשים</string>
+
+</resources>

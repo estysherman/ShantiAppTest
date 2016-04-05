@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.messages.FullScreenChatImageFragment"
+    android:background="@color/offwhite_base">
+
+
+    <RelativeLayout
+        android:id="@+id/chatActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_default_padding_material">
+
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/chatTitleName"
+            style="@style/green_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="מוישי מושה"
+            android:textSize="30dp" />
+
+        <View
+            android:id="@+id/chatBack"
+            android:layout_width="10dp"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/spinner_green"
+            android:layout_marginStart="12dp"
+            android:rotation="180"
+            android:text="@string/actionBarRight"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/chatActionBar"
+        android:id="@+id/full_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/user_photo"/>
+
+</RelativeLayout>

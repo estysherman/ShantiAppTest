@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="loginError">בעיה בשרת</string>-->
+    <!--<string name="server_client_id">103304875729-o4fql8tjnfecpse42muc9ai8r90kqavc.apps.googleusercontent.com</string>-->
+
+    <string name="APP_ID_FACEBOOKE">443047462572938</string>
+    <string name="app_name">Shanti</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_user">CreateUserActivity</string>
+    <string name="title_activity_main_login">MainLoginActivity</string>
+    <string name="title_activity_search_def">SearchDefActivity</string>
+    <string name="title_activity_sign_in_end">SignInEndActivity</string>
+    <string name="title_activity_proffile_def">ProffileDefActivity</string>
+    <string name="title_activity_end_registration">EndRegistrationActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_add_group">AddGroupActivity</string>
+    <string name="title_activity_group_details">GroupDetailsActivity</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_message_received">Consts</string>
+
+    <!--General-->
+    <string name="noConnectionNetwork">שגיאה בקבלת נתונים מהשרת, בדוק חיבורי רשת</string>
+    <string name="noConnection">אין חיבור לאינטרנט</string>
+
+    <string name="noServer">תקלה זמנית בשרת, נסה מאוחר יותר</string>
+    <string name="dateBeforeToday">לא ניתן לבחור תאריך גדול מהיום</string>
+    <string name="loading">טוען...</string>
+    <string name="chooseImage">בחר תמונה</string>
+    <string name="chooseImageCamera">מצלמה</string>
+    <string name="chooseImageGallery">גלריה</string>
+    <string name="chooseImageCancel">ביטול</string>
+
+    <!-- main -->
+    <string name="oneGroup">קבוצות</string>
+    <string name="allGroup">כולם</string>
+    <string name="ifYouExit">האם אתה רוצה לעזוב את שאנטי?</string>
+    <string name="exitYes">כן</string>
+    <string name="exitNo">לא</string>
+
+    <!--My Profile-->
+    <string name="myProfile">הפרופיל שלי</string>
+    <string name="myProfileEdit">ערוך</string>
+    <string name="myProfileClose">סגור</string>
+    <string name="myProfileDetails">פרטים אישיים</string>
+    <string name="myProfilePersonalProfile">פרופיל אישי</string>
+    <string name="myProfileCompletesDetails">פרטים משלימים</string>
+    <string name="myProfileEmail">מייל</string>
+    <string name="myProfilePassword">סיסמה</string>
+    <string name="myProfileFirstName">שם פרטי</string>
+    <string name="myProfileLastName">שם משפחה</string>
+    <string name="myProfilePhone">נייד</string>
+    <string name="myProfileCountry">ארץ מגורים</string>
+    <string name="myProfileLanguage">שפה</string>
+    <string name="myProfileJob">מקצוע</string>
+    <string name="myProfileHobby">תחביב</string>
+    <string name="myProfileMoreInfo">עוד על עצמך</string>
+    <string name="myProfileRequiredField">יש להזין טלפון, ארץ מגורים, מגדר, שפה דת ותאריך לידה</string>
+    <string name="myProfileUpdateError">ארעה שגיאה, הנתונים לא נשמרו</string>
+    <string name="myProfileUpdateSuccess">השינויים נשמרו</string>
+
+    <!-- Personal Area -->
+    <string name="personalAreaMyProfile">הפרופיל שלי</string>
+    <string name="personalAreaSearchPeopleSettings">הגדרות חיפוש משתמשים</string>
+    <string name="personalAreaSearchInfoSettings">הגדרות חיפוש מידע</string>
+    <string name="personalAreaInfoSettings">הגדרות תצוגת מידע</string>
+    <string name="personalAreaLogOut">התנתקות</string>
+    <string name="personalArea">איזור אישי</string>
+    <string name="personalAreaMyPicture">התמונות שלי</string>
+
+    <!-- Add Group -->
+    <string name="addGroupLoadViewsError">בעיה בטעינת הפקדים</string>
+    <string name="addGroupTitle">יצירת קבוצה חדשה</string>
+    <string name="addGroupName">שם הקבוצה</string>
+    <string name="addGroupMoreInfo">משהו נוסף...</string>
+    <string name="addGroupPublic">קבוצה כללית</string>
+    <string name="addGroupPrivate">קבוצה פרטית</string>
+    <string name="addGroupChooseImage">בחר תמונה לקבוצה</string>
+    <string name="addGroupChooseOtherImage">בחר תמונה אחרת</string>
+    <string name="addGroupAddFriends">צרף חברים:</string>
+    <string name="addGroupCreateGroup">צור קבוצה</string>
+    <string name="addGroupNoExistEmail">כתובת מייל לא קיימת</string>
+    <string name="addGroupNoAttachEmail">לא ניתן לצרף את החבר המבוקש</string>
+    <string name="addGroupCreateNewGroupFail">שגיאה ביצירת הקבוצה</string>
+    <string name="addGroupIconLocation">&#xf041;</string>
+    <string name="addGroupIconAddMember">&#xf234;</string>
+    <string name="addGroupIconRemoveMember">&#xf00d;</string>
+    <string name="addGroupSearchTextRequired">הזן טקסט לחיפוש</string>
+    <string name="errorRemoveUserFromGroupQb">תקלה בשרת QB , לא ניתן להסיר חבר מהקבוצה</string>
+    <string name="errorRemoveGroupFromQB">תקלה בשרת QB ,לא ניתן למחוק את הקבוצה</string>
+
+    <!-- groups -->
+    <string name="groupsEmptyList">אין לך קבוצות כעת.\nהתחל ביצירת קבוצות.</string>
+    <string name="groupsCreateGroup">צור קבוצה חדשה</string>
+    <string name="groupsTitle">קבוצות</string>
+    <string name="groupsNewGroup">קבוצה חדשה</string>
+    <string name="groupErrorNameGroup">יש להזין שם לקבוצה</string>
+    <string name="groupsMap">מפה</string>
+    <string name="groupsDetails">פרטי הקבוצה:</string>
+    <string name="groupsAddFriends">צרף חברים</string>
+    <string name="groupsMeetingPoint">נקודת מפגש</string>
+    <string name="groupsAddMoreFriends">+ צרף עוד חברים</string>
+    <string name="groupsShantiName">שם שאנטי</string>
+    <string name="groupsSearchGroup">חפש קבוצה</string>
+    <string name="groupsSharePhoto">שתף תמונות</string>
+    <string name="groupsIconCamera">&#xf030;</string>
+    <string name="groupsIconAngleLeft">&#xf104;</string>
+    <string name="groupsIconAngleRight">&#xf105;</string>
+    <string name="groupsMoreAbout">עוד על קבוצת </string>
+    <string name="groupsIconPoints"><b>&#xf141;</b></string>
+    <string name="groupsSendMessage"><b>שלח בקשה</b></string>
+    <string name="groupChatIsNotAvailable">הסטורית ההודעות לא נטענה</string>
+    <string name="groupChatIsNotAvailableRetry">נסה שנית</string>
+    <string name="Location">ישראל</string>
+    <string name="events">ארועים</string>
+    <string name="coupons">קופונים</string>
+    <string name="more_about_the_group">עוד משהו על הקבוצה..</string>
+    <string name="groupDeleteIcon">&#xf014;</string>
+
+    <!--Approval group-->
+    <string name="approvalJoinYouRequests">מבקשת לצרף אותך לקבוצה</string>
+    <string name="approvalEmptyList">אין לך בקשות הצטרפות כעת</string>
+    <string name="approvalOK">אשר</string>
+    <string name="approvalGroup">קבוצת</string>
+    <string name="approvalCancellation">דחה</string>
+    <string name="approvalJoinRequests">בקשות הצטרפות</string>
+    <string name="approvalJoinRequest">בקשת הצטרפות</string>
+    <string name="approvalGroups">קבוצות</string>
+    <string name="approvalApproval1">קבוצת</string>
+    <string name="approvalApproval2">מבקשת לצרף אותך אליה</string>
+
+
+    <!--Group Profile-->
+    <string name="groupProfile">פרופיל קבוצה</string>
+    <string name="groupProfileSaveChanges">שמור שינויים</string>
+    <string name="groupProfileEdit">ערוך</string>
+
+
+    <!--Group Edit-->
+    <string name="groupEditLoadViewsError">בעיה בטעינת הפקדים</string>
+    <string name="groupEditRemoveGroup">&#xf00d;</string>
+    <string name="groupEditRemoveMember">מחק</string>
+    <string name="groupEditImageDelete">מחק</string>
+    <string name="groupEditImage">בחר תמונה לקבוצה:</string>
+    <string name="groupEditImageReplace">החלף</string>
+    <string name="groupEditImageRetake">צלם שוב</string>
+    <string name="groupEditMoreAbout">עוד משהו על הקבוצה:</string>
+    <string name="groupEditUpdateError">ארעה שגיאה במהלך העדכון</string>
+    <string name="groupEditUpdateSuccess">פרטי הקבוצה עודכנו</string>
+    <string name="groupEditRemoveError">אירעה שגיאה במהלך המחיקה</string>
+    <string name="groupEditRemoveDialogMessage">למחוק את הקבוצה?</string>
+    <string name="groupEditRemoveDialogOK">מחק</string>
+    <string name="groupEditRemoveDialogCancel">ביטול</string>
+
+    <string name="profileGroupTitle">קבוצת %1$s</string>
+    <!--<string name="profileGroupDesc">קבוצה %2$d | %1$s חברים | %3$d בקשות הצטרפות</string>-->
+    <string name="profileGroupDesc">קבוצה %1$s | %2$d חברים | %3$d בקשות הצטרפות</string>
+
+    <string name="profileGroupMoreInfo">עוד משהו על הקבוצה..</string>
+    <string name="profileGroupFriends">החברים</string>
+    <string name="profileGroupSharedImages">תמונות משותפות</string>
+    <string name="profileGroupMemberAttach">הצטרף %1$s</string>
+    <string name="profileGroupAttachIn"> הצטרף ב</string>
+    <string name="profileGroupGroupManager">מנהל הקבוצה</string>
+
+    <!--Add members customView-->
+    <string name="addMembersSearchHint">חפש לפי שם או שם שאנטי</string>
+    <string name="addMembersSearchIcon">&#xf002;</string>
+    <string name="addMembersAttach">צרף חברים</string>
+    <string name="addMembersNoMembers">אין לך חברים בקבוצה</string>
+    <string name="addMembersAttachNum"> שלחת בקשה ל %1$d חברים</string>
+    <string name="addMembersTheUserReceivedARequestToJoin">המשתמש קבל בקשת הצטרפות</string>
+    <string name="addMembersTheUserDoesntReceivedARequestToJoin">המשתמש לא קבל בקשת הצטרפות</string>
+    <!--<string name="addMembersPlusIcon">&#xf234;</string>-->
+    <string name="addMembersPlusIcon">&#xf0c0;</string>
+    <string name="addMembersSendAsk">שלח בקשה</string>
+    <string name="addMembersDelete">&#xf00d;</string>
+
+    <!--general-->
+    <string name="splashNoInternetConnection">אין חיבור לאינטרנט, לא ניתן להמשיך</string>
+    <string name="splashNoInternetOk">הגדרות</string>
+    <string name="userInfoText">חבר ב %1$d קבוצות ומנהל %2$d קבוצות</string>
+
+    <!-- login main -->
+    <string name="signInBack">&#xf104;</string>
+    <string name="mainLoginChooseOption">בחר באחת מהאפשרויות כדי להתחבר</string>
+    <string name="mainLoginFacebook">facebook</string>
+    <string name="mainLoginGooglePluse">Google+</string>
+    <string name="mainLoginSignIn">כניסה</string>
+    <string name="mainLoginSignUp">הרשמה</string>
+    <string name="mainLoginPrivacyPolicy">מדיניות הפרטיות</string>
+    <string name="mainLoginTermsCondition">תנאים והגבלות</string>
+    <string name="mainLoginMoreOptions">הצג עוד אפשרויות</string>
+    <string name="mainLoginError">פרטי הכניסה שהזנת שגויים</string>
+    <string name="mainLoginEnterEmail">להמשך הרישום- הכנס מייל</string>
+    <string name="mainLoginPasswordRecovery">שחזור סיסמה</string>
+
+
+    <!-- Login Personal Information -->
+    <string name="loginPersonalDetails">פרטים אישיים</string>
+    <string name="loginEmail">מייל</string>
+    <string name="loginPassword">סיסמה</string>
+    <string name="loginShantiName">שם משתמש</string>
+    <string name="loginCellphone">נייד</string>
+    <string name="loginCellprefix">קידומת</string>
+    <string name="loginLastName">שם משפחה</string>
+    <string name="loginFirstName">שם פרטי</string>
+    <string name="loginContinue">המשך</string>
+    <string name="loginSignUp">הרשמה</string>
+    <string name="loginEnter">כניסה</string>
+    <string name="loginShantiNameExist">שם משתמש קיים במערכת</string>
+    <string name="loginEmailExist">כתובת המייל קיימת במערכת</string>
+    <string name="loginMailShantiNameExist">כתובת המייל ושם משתמש קיימים במערכת</string>
+    <string name="verifyCodeEnterCode">הכנס את קוד האימות שקיבלת ב SMS:</string>
+    <string name="verifyCodeNoMatch">הקוד שהזנת אינו תואם את הקוד שנשלח</string>
+    <string name="loginRequiredFields">נא להזין שם שאנטי, מייל, סיסמה וטלפון נייד</string>
+    <string name="please_enter_data">נא להזין נתונים</string>
+	<string name="search">חיפוש...</string>
+    <!-- Login Personal Error -->
+    <string name="loginErrorEmail">כתובת מייל לא תקינה</string>
+    <string name="loginErrorAStrongPassword">סיסמה חזקה חייבת להכיל לפחות 8 תווים: אותיות גדולות וקטנות, מספרים וסימני פיסוק</string>
+    <string name="loginErrorPasswordsDontMatch">הסיסמאות אינן תואמות, נסה שוב</string>
+    <string name="loginErrorAtLeast2Characters">יש להזין לפחות 2 תווים</string>
+    <string name="loginErrorPhone">יש להזין מספר בן 9 ספרות, ללא קידומת</string>
+    <string name="loginErrorRequired">יש להזין נתונים</string>
+    <string name="loginErrorRequiredPhonePrefix">יש להזין קידומת טלפון</string>
+    <string name="loginErrorRequiredEmail">יש להזין כתובת מייל</string>
+    <string name="loginErrorRequiredFirstName">יש להזין שם פרטי</string>
+    <string name="loginErrorRequiredLastName">יש להזין שם משפחה</string>
+    <string name="loginErrorCountry">יש לבחור מדינה</string>
+    <string name="loginError">בעיה בשרת</string>
+
+    <!-- <string name="lConditions">![CDATA[ -->
+    <!-- בהרשמה לשאנטי אני מסכים לכל <b><font color="#ffffffff">התנאים וההגבלות</b> וכן <b><font color=#0000ff>מדיניות הפרטיות</b> של אנשים, הקבוצות ופרטיהם האישיים כפי שמפורט בתקנון החברה. -->
+    <!-- </string> -->
+    <string name="useTermsText1">בהרשמה לשאנטי אני מסכים לכל </string>
+    <string name="useTermsText2">  התנאים וההגבלות </string>
+    <string name="useTermsText3">וכן </string>
+    <string name="useTermsText4">מדיניות הפרטיות </string>
+    <string name="useTermsText6">של המשתמשים, הקבוצות ופרטיהם האישיים</string>
+    <string name="useTermsText7">כפי שמפורט בתקנון החברה.</string>
+
+    <!-- login -->
+    <string name="loginMail">מייל</string>
+    <string name="loginNewPassword">סיסמה חדשה</string>
+    <string name="loginPasswordConfirm">אימות סיסמה</string>
+
+    <string name="loginForgetPassword">שכחתי סיסמה</string>
+
+    <string name="loginCellPhone">נייד</string>
+    <string name="loginErrorDuplicateDevices">הנך מחובר כבר למכשיר אחר, \nאזהרה: המכשיר השני עומד להתנתק</string>
+    <!--LogOut-->
+    <string name="logoutError">אירעה שגיאה במהלך ההתנתקות</string>
+
+
+    <!--forgetPassword-->
+    <string name="forgetPasswordRestore">שחזור סיסמה</string>
+    <string name="forgetPasswordMail">כתובת המייל שאיתה נרשמת</string>
+    <string name="forgetPasswordBirthDate">תאריך לידה</string>
+    <string name="forgetPasswordSendMail">הסיסמה תשלח לך במייל</string>
+    <string name="forgetPasswordOK">אישור</string>
+    <string name="forgetPasswordNoExistMail">הפרטים שהזנת לא תואמים את הפרטים במערכת</string>
+    <string name="forgetPasswordMailEmpty">יש להזין כתובת מייל</string>
+    <string name="forgetPasswordBirthDateEmpty">יש להזין תאריך לידה</string>
+    <string name="forgetPasswordSentTo">הסיסמה נשלחה ל %1$s</string>
+
+    <!-- signin 2 -->
+
+
+    <string name="signUpTitle">הרשמה</string>
+    <string name="signUpCountry">ארץ מגורים</string>
+    <string name="signUpBirthDate">תאריך לידה</string>
+    <string name="signUpGender">מגדר</string>
+    <string name="signUpAgeRange">טווח גיל</string>
+    <string name="signUpReligion">דת</string>
+    <string name="signUpLevelReligion">יחס לדת</string>
+    <string name="signUpSubTitle">הגדר את הפרופיל שלך</string>
+    <string name="signUpCreateUser">הרשם</string>
+    <string name="signUpPhonePrefix">קידומת טלפון</string>
+    <string name="signUpCountrySearchHint">חפש...</string>
+
+    <!--QuickBlox-->
+    <string name="quickBloxSignUpError">לא ניתן להרשם לצאט</string>
+
+    <!-- take photo -->
+    <string name="takePhotoWelcome">ברוך הבא,</string>
+    <string name="takePhotoComment">אנשים אוהבים להכיר את חבריהם לקבוצה.\nהשלם את עריכת הפרופיל שלך כדי לעזור לקבוצה להכיר אותך.</string>
+    <string name="takePhotoTackPicture">צלם תמונה</string>
+    <string name="takePhotoChooseFile">בחר מתוך מאגר</string>
+    <string name="takePhotoAddPictureLater">הוסף מאוחר יותר</string>
+    <string name="takePhotoFillYourProfile">השלם את הפרופיל שלך.</string>
+    <string name="takePhotoChooseFileTitle">בחר מיקום קובץ</string>
+
+    <string name="takePhotoCommit">הנה התמונה שבחרת.\n האם זה אתה?</string>
+    <string name="takePhotoYesAndFinish">כן. השלם הרשמה</string>
+    <string name="takePhotoCaptureAgain">צלם שוב</string>
+
+    <!-- more info - complete Registration -->
+    <string name="moreInfoSubTitle">השלם את הפרופיל שלך.</string>
+    <string name="moreInfoJob">מקצוע או תחום עיסוק</string>
+    <string name="moreInfoHobby">תחביב</string>
+    <string name="moreInfoLanguages">שפות מדוברות</string>
+    <string name="moreInfoMoreDetails">עוד פרטים</string>
+    <string name="moreInfoComment">ספר למשתמשים שבקבוצתך על הטיולים שלך. האם יש משהו שאתה מתעניין בו במיוחד?\nהאם יש משהו משמעותי בחייך שאתה רוצה לחלוק אותו איתם?</string>
+    <string name="moreInfoTitle">השלמת פרטים</string>
+    <string name="moreInfoFinish">סיום</string>
+
+    <!-- gender -->
+    <string name="genderMale">זכר</string>
+    <string name="genderFemale">נקבה</string>
+
+    <!-- mUser preferences -->
+    <string name="userPrefNote">בחר את מאפיני החברים שתרצה להכיר</string>
+    <string name="userPrefTitle">הגדרות חיפוש</string>
+    <string name="userPrefSkip">דלג</string>
+    <string name="userPrefLanguage">שפה</string>
+    <string name="userPrefCountry">ארץ מגורים</string>
+    <string name="userPrefAge">גיל</string>
+    <string name="userPrefGender">מגדר</string>
+    <string name="userPrefReligion">דת</string>
+    <string name="userPrefLevelReligion">רמה דתית</string>
+    <string name="userPrefRadius">רדיוס</string>
+    <string name="userPrefOk">אישור</string>
+    <string name="userPrefRadiusRequired">חובה לבחור רדיוס</string>
+    <string name="userPrefLoadingError">ארעה שגיאה בעת טעינת ההגדרות שלך</string>
+    <string name="userPrefChangesSaved">השינויים נשמרו</string>
+    <string name="userPrefChangesNotSaved">ארעה שגיאה בעת שמירת השינויים</string>
+
+    <!-- message  and pattern -->
+    <string name="messageEmail">מייל אינו תקין</string>
+    <string name="messagePassword">יש להזין סיסמה</string>
+    <string name="messageFirstName">יש להזין שם.</string>
+    <string name="messageLastName">נא להזין שם משפחה.</string>
+    <string name="messagePhone">מספר הפלאפון אינו חוקי</string>
+
+    <!-- action bar -->
+    <string name="actionBarInfo">מידע</string>
+    <string name="actionBarMap">מפה</string>
+    <string name="actionBarMassage">הודעה</string>
+    <string name="actionBarMessages">הודעות</string>
+    <string name="actionBarMessagesMenu">תפריט</string>
+    <string name="actionBarMessagesMap">מפה</string>
+    <string name="actionBarRight">&#xf105;</string>
+    <string name="actionBarLeft">&#xf104;</string>
+
+
+    <!--Notifications-->
+    <string name="logOffUserDialogMessage"></string>
+    <string name="logOffUserDialogTitle"></string>
+    <string name="logOffUserDialogYes">היכנס</string>
+    <string name="logOffUserDialogNo">ביטול</string>
+    <string name="notificationNewMessage">הודעה חדשה</string>
+    <string name="notificationEnterLogin">היכנס</string>
+    <string name="notificationDoLogin">היכנס כדי לראות אותה</string>
+    <string name="notificationCancellation">ביטול</string>
+    <string name="notificationYes">כן</string>
+    <string name="notificationNo">לא</string>
+    <string name="notificationNewChatFrom">הודעת צאט חדשה מ </string>
+    <string name="notificationEnterChat"> לעבור להודעה?</string>
+    <string name="notificationApprovalToGroupDialogTitle">משהו רוצה לצרף אותך לקבוצה</string>
+    <string name="notificationApprovalToGroupDialogMessage">האם ברצונך לעבור לאישור הצטרפות?</string>
+    <string name="notificationApprovalToGroupDialogYes">כן</string>
+    <string name="notificationApprovalToGroupDialogNo">לא</string>
+    <string name="notificationPrivateChatDialogTitle">%1$s כותב לך הודעה</string>
+    <string name="notificationPrivateChatDialogMessage">האם ברצונך לעבור למסך ההודעות? </string>
+    <string name="notificationGroupChatDialogTitle">%1$s הודעה לקבוצת</string>
+    <string name="notificationGroupChatDialogMessage">האם ברצונך לעבור להודעה? </string>
+    <string name="messagesEmptyList">אין לך הודעות חדשות כעת</string>
+
+    <!--Search users-->
+    <string name="searchEmptyList">אין תוצאות חיפוש מתאימות.\n הקלד חיפוש חדש</string>
+    <string name="searchSearchIcon">&#xf002;</string>
+    <string name="searchABCOrderIcon">&#xf0b0;</string>
+    <string name="searchFarOrderIcon">&#xf041;</string>
+    <string name="sort_by">מיין לפי:</string>
+    <string name="far">מרחק</string>
+    <string name="alphabetical">אלפבתי</string>
+    <string name="kilometer">ק\"מ</string>
+
+    <!--Info-->
+    <string name="infoActionBarMap">מפה</string>
+    <string name="infoActionBarInfo">מידע</string>
+    <string name="infoReview">תגובות</string>
+    <!--     <string name="infoServices">שירותים</string>
+     <string name="infoHotels">מלונות</string>
+     <string name="infoFood">אוכל</string>
+     <string name="infoShopping">קניות</string>
+     <string name="infoTransportation">תחבורה</string>
+     <string name="infoFun">בילוי</string>
+     <string name="infoReligion">דת</string>
+     <string name="infoProfessionals">בעלי מקצוע</string>
+     <string name="infoOthers">שונות</string>
+    -->
+
+    <!--Info details-->
+    <string name="infoNext">&#xf104;</string>
+    <string name="infoPrev">&#xf105;</string>
+    <string name="infoDetailsInfo">מידע</string>
+    <string name="infoDetailsReview">תגובות</string>
+    <string name="infoAddressIcon">&#xf041;</string>
+    <string name="infoPhoneIcon">&#xf095;</string>
+    <string name="infoHoleStarIcon">&#xf005;</string>
+    <string name="infoHalfStarIcon">&#xf089;</string>
+    <string name="infoSeparator">|</string>
+    <string name="infoAddressOpening">&#xf017;</string>
+    <string name="infoAddressSite">&#xf05a;</string>
+    <string name="infoShowMap">הצג מפה</string>
+    <string name="infoMaxRating">דירוג מקסימלי</string>
+    <string name="infoPrice">מחיר</string>
+    <string name="infoWillBeSupportedInTheFuture">אפשרות זו תיתמך בגרסא עתידית</string>
+
+
+    <!--Map footer-->
+    <string name="mapFooterAll">כולם</string>
+    <string name="mapFooterPublicMessage">הודעה כללית</string>
+    <string name="mapFooterPublicMessageNoSend">הודעה כללית לא נשלחה</string>
+    <string name="mapFooterPublicMessageSend">הודעה כללית נשלחה</string>
+    <string name="mapFooterGroup">קבוצות</string>
+    <string name="mapFooterPlusGroup">&#xf067;</string>
+    <string name="mapFooterUserMoreAbout">עוד על</string>
+    <string name="mapFooterYouHear">אתה נמצא כאן.</string>
+
+    <!--Create meeting point-->
+    <string name="meetingPointTitle">קביעת נקודת מפגש</string>
+    <string name="meetingPointAngleLeft">&#xf104;</string>
+    <string name="meetingPointAngleRight">&#xf105;</string>
+    <string name="meetingPointMeetingTime">שעת מפגש: </string>
+    <string name="meetingPointSetting">הגדרה</string>
+    <string name="meetingPointComments">הערות</string>
+    <string name="meetingPointCreatePoint">צור נקודת מפגש</string>
+    <string name="meetingPointToGroup">לקבוצת </string>
+    <string name="meetingPointCreateError">ארעה שגיאה בעת יצירת נקודת המפגש לקבוצת </string>
+    <string name="meetingPointCreateErrorLoading">ארעה שגיאה בעת טעינת הקבוצות שלך. לא ניתן ליצור נקודת מפגש</string>
+
+    <!--Meeting point details-->
+    <string name="meetingDetailsComments"><b>הערות:</b></string>
+    <string name="meetingDetailsSetting"><b>הגדרה:</b></string>
+    <string name="meetingDetailsTimeToArrived"><b>זמן הגעה ממיקומך:</b></string>
+    <string name="meetingDetailsMinutes">דקות</string>
+    <string name="meetingDetailsGroup">מפגש קבוצת</string>
+    <string name="meetingDetailsCalculateTime">זמן הגעה ממיקומך: מחשב...</string>
+
+
+    <!--public message-->
+    <string name="publicMessageSendMessage">הודעה כללית</string>
+    <string name="publicMessageMessage">הודעה כללית</string>
+    <string name="publicMessageSend">שלח</string>
+    <string name="publicMessageGoToChat">הגב</string>
+    <string name="publicMessageCancle">ביטול</string>
+    <string name="title_activity_notification_user_logoff">NotificationUserLogoff</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="mapGpsSettingsOn">כיבוי שירותי מיקום</string>
+    <string name="mapGpsSettingsOff">הדלקת שירותי מיקום</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+    <!--name fragment-->
+    <string name="SearchUsersFragment">SearchUsersFragment</string>
+    <string name="PlaceDetailsFragment">PlaceDetailsFragment</string>
+    <string name="ChatFragment">ChatFragment</string>
+    <string name="MainLoginFragment">MainLoginFragment</string>
+    <string name="MainBaseFragment">MainBaseFragment</string>
+    <string name="InfoMainFragment">InfoMainFragment</string>
+    <string name="ApprovalGroupFragment">ApprovalGroupFragment</string>
+    <string name="BaseInfoFragment">BaseInfoFragment</string>
+    <string name="EditGroupFragment">EditGroupFragment</string>
+    <string name="ForDeleteFragment">ForDeleteFragment</string>
+    <string name="GroupsListFragment">GroupsListFragment</string>
+    <string name="GroupChatFragment">GroupChatFragment</string>
+    <string name="GroupMainFragment">GroupMainFragment</string>
+    <string name="GroupProfileFragment">GroupProfileFragment</string>
+    <string name="MessagesFragment">MessagesFragment</string>
+    <string name="MyProfileFragment">MyProfileFragment</string>
+    <string name="SearchPreferencesFragment">SearchPreferencesFragment</string>
+    <string name="MapFragment">MapFragment</string>
+    <string name="VerifyCodeFragment">VerifyCodeFragment</string>
+    <string name="ProfileInfoFragment">ProfileInfoFragment</string>
+    <string name="TakePhotoFragment">TakePhotoFragment</string>
+    <string name="MoreInfoFragment">MoreInfoFragment</string>
+    <string name="ForgetPasswordFragment">ForgetPasswordFragment</string>
+    <string name="LoginFragment">LoginFragment</string>
+    <string name="SignUpBaseFragment">SignUpBaseFragment</string>
+
+
+</resources>

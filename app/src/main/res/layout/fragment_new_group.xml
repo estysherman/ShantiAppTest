@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.main.groups.AddGroupActivity1">
+
+
+    <include layout="@layout/group_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/addGroupImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="280dp"
+                    android:alpha="0.7"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/addGroupTitleDetails"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/groupsDetails" />
+
+                    <webit.android.shanti.customViews.CustomEditText
+                        android:id="@+id/addGroupName"
+                        style="@style/general_editText"
+                        android:layout_width="fill_parent"
+                        android:layout_below="@+id/addGroupTitleDetails"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/addGroupName"
+                        android:imeOptions="actionNext" />
+
+                    <webit.android.shanti.customViews.CustomEditText
+                        android:id="@+id/addGroupMoreInfo"
+                        style="@style/general_editText"
+                        android:layout_width="fill_parent"
+                        android:layout_below="@id/addGroupName"
+                        android:hint="@string/addGroupMoreInfo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/addGroupType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/addGroupMoreInfo"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center|right"
+                            android:orientation="horizontal"></RadioGroup>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/errorAddGroupType"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/addGroupLoadGroupImage"
+                        style="@style/general_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addGroupType"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/addGroupChooseOtherImage" />
+
+                    <!--
+                                    <webit.android.shanti.customViews.AddMembersCustomView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/addGroupAddmembers"
+
+                                        android:layout_height="wrap_content" />-->
+
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/addGroupCreateGroup"
+                        style="@style/general_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/addGroupCreateGroup" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

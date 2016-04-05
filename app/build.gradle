@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+project.archivesBaseName = "Shanti";
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.0'
+    defaultConfig {
+        applicationId "webit.android.shanti"
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 8
+        versionName "1.0.9"
+        multiDexEnabled true
+
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/libs']
+            res.srcDirs = ['src/main/res', 'src/main/res/anim']
+        }
+    }
+    productFlavors {
+    }
+
+    compileOptions.encoding = 'UTF-8' // write your encoding here
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace(".apk", "-${variant.versionName}.apk"))
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+//        compile files('src/main/java/libs/picasso-2.4.0.jar')
+        compile files('src/main/java/libs/gson-2.2.4.jar')
+
+        compile files('src/main/java/libs/quickblox-android-sdk-core-2.1.jar')
+        compile files('src/main/java/libs/quickblox-android-sdk-chat-2.1.jar')
+        compile files('src/main/java/libs/quickblox-android-sdk-content-2.1.jar')
+        compile files('src/main/java/libs/quickblox-android-sdk-messages-2.1.jar')
+        //    compile files('src/main/java/libs/android-binding.ant.jar')
+        //    compile files('src/main/java/libs/saripaar-11242012.jar')
+        //compile project(':pull-to-refresh')
+        //    compile project(path: ':backend', configuration: 'android-endpoints')
+        compile files('src/main/java/libs/bugsense-3.5.jar')
+        /*compile files('libs/getimage.jar')*/
+        compile 'com.android.support:appcompat-v7:22.1.1'
+//        compile 'com.google.android.gms:play-services:6.1.71'
+        compile 'com.google.android.gms:play-services:8.3.0'
+        compile 'com.google.android.gms:play-services-auth:8.3.0'
+
+        //compile 'com.github.siyamed:android-shape-imageview:0.9.2'
+        compile files('libs/webitdialog.jar')
+        compile 'com.joooonho:selectableroundedimageview:1.0.1'
+        compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    }
+}
+//dependencies {
+//    //compile 'com.pkmmte.view:circularimageview:1.1'
+//    //compile 'com.makeramen:roundedimageview:2.1.0'
+//    //compile 'com.edmodo:cropper:1.0.1'
+//}
+
+dependencies {
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}
+
+dependencies {
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'com.android.support:support-v4:22.0.0'
+}
+dependencies {
+    compile 'com.android.support:support-v4:21.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:21.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:21.+'
+}
+dependencies {
+    compile 'com.android.support:support-v4:21.+'
+}

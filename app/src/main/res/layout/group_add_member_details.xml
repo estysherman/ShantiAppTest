@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friendDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeMember"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border">
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/agButtonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/groupAddMemberRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:text="@string/addGroupIconRemoveMember"
+                android:textSize="40dp"
+                android:visibility="gone"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/groupAddMemberSendAsk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/groupsSendMessage"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.joooonho.SelectableRoundedImageView
+            app:sriv_left_bottom_corner_radius="10dp"
+            app:sriv_left_top_corner_radius="10dp"
+            app:sriv_right_bottom_corner_radius="10dp"
+            app:sriv_right_top_corner_radius="10dp"
+            android:id="@+id/groupAddMemberImage"
+            android:layout_width="50dp"
+            android:src="@drawable/user_photo"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/agButtonsLayout"
+            android:scaleType="fitXY"
+            app:sriv_border_color="@color/green"
+            app:sriv_border_width="1dp"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/groupAddMemberName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="sdsds" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/groupAddMemberAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="ssssssssssss" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

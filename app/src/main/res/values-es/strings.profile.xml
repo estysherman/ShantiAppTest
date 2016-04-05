@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profileMemberShantiName">Nombre del usuario: %1$s</string>
+    <string name="profileMemberAgeMale">%1$s | %2$d</string>
+    <string name="profileMemberAgeFemale">%1$s | %2$d</string>
+    <string name="profileMemberPersonalArea">Perfil personal</string>
+    <string name="profileMemberCountry">País de origen:</string>
+    <string name="profileMemberLanguages">Idioma:</string>
+    <string name="profileMemberReligion">Religión:</string>
+    <string name="profileMemberLevelReligion">Relación con la religión:</string>
+    <string name="profileMemberJob">Profesión:</string>
+    <string name="profileMemberHobby">Hobby:</string>
+    <string name="profileMemberMoreInfo">Más información acerca de los %1$s:</string>
+
+</resources>

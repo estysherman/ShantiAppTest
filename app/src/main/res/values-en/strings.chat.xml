@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chatUserName">You are here</string>
+    <string name="chatMoreInfo">More about</string>
+
+    <string name="chatShowHistory">+Display from yesterday </string>
+    <string name="chatSend">Submit</string>
+    <string name="chatTo">Chat to</string>
+    <string name="chatNoAddress">Located at an unknown address</string>
+    <string name="chatMe">I</string>
+    <string name="chatError">Chat cannot be opened</string>
+    <string name="chatAttachmentError">An error occurred while adding a picture. try again later</string>
+    <string name="chatDeleteMessageAlert">Do you want to delete this message</string>
+    <string name="chatDeleteMessage">Delete</string>
+    <string name="chatCancelDeleteMessage">Cancel</string>
+    <string name="chatDeleteIcon">&#xf014;</string>
+</resources>

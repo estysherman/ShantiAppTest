@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:paddingStart="@dimen/abc_action_bar_icon_vertical_padding_material"
+    android:id="@+id/signInActionBar">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/messagesActionBackIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signInBack"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:onClick="backClick"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:fontStyle="Icon"
+        app:fontName="fontawesome-webfont.ttf" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/SignInActionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/loginSignUp"
+        android:textSize="30sp"
+        android:textColor="@color/white" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/SignInActionSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/userPrefSkip"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

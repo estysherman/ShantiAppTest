@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/meeting_marker_big_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/meeting_point_create_point"
+         />
+
+    <ImageView
+        android:id="@+id/meeting_marker_small_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/meeting_point_marker" />
+
+    <webit.android.shanti.customViews.CustomEditText
+        android:layout_width="wrap_content"
+        android:id="@+id/meeting_marker_time"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webit.android.shanti.customViews.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileInfoUseTermsTxt1"
+    android:layout_height="40dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textColor="@color/gray"
+    android:gravity="start|center_vertical"
+    android:layout_width="wrap_content"
+    android:paddingEnd="15dp"
+    android:text="cvxcvxvxvxcvxcvxcvxcvxvxvxcvxcvxcvxcvxcvxcvxcvxcvxvxvcxvxvxcvx"  />

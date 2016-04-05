@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/gray_medium" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="0.5"
+            android:background="@color/purple_medium" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="275dp"
+            android:padding="22.5dp">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsAddressIcon"
+                style="@style/place_details_icon"
+                android:layout_below="@+id/placeDetailsInfo"
+                android:text="@string/infoAddressIcon"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsAddress"
+                style="@style/place_details_text"
+                android:layout_below="@+id/placeDetailsInfo"
+                android:layout_toEndOf="@+id/placeDetailsAddressIcon"
+                android:text="address" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsPhoneIcon"
+                style="@style/place_details_icon"
+                android:layout_below="@+id/placeDetailsAddress"
+                android:layout_marginTop="11.5dp"
+                android:text="@string/infoPhoneIcon"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsPhone"
+                style="@style/place_details_text"
+                android:layout_below="@+id/placeDetailsAddress"
+                android:layout_marginTop="11.5dp"
+                android:layout_toEndOf="@+id/placeDetailsPhoneIcon"
+                android:text="+ phone" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsOpeningIcon"
+                style="@style/place_details_icon"
+                android:layout_below="@+id/placeDetailsPhone"
+                android:layout_marginTop="11.5dp"
+                android:text="@string/infoAddressOpening"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsOpening"
+                style="@style/place_details_text"
+                android:layout_below="@+id/placeDetailsPhone"
+                android:layout_marginTop="11.5dp"
+                android:layout_toEndOf="@+id/placeDetailsPhoneIcon"
+                android:text="7:00- 21:30" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsSiteIcon"
+                style="@style/place_details_icon"
+                android:layout_below="@+id/placeDetailsOpening"
+                android:layout_marginTop="11.5dp"
+                android:text="@string/infoAddressSite"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsSite"
+                style="@style/place_details_text"
+                android:layout_below="@+id/placeDetailsOpening"
+                android:layout_marginTop="11.5dp"
+                android:layout_toEndOf="@+id/placeDetailsSiteIcon"
+                android:text="www.google.com" />
+
+
+            <webit.android.shanti.customViews.CustomButton
+                android:id="@+id/placeDetailsShowMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/placeDetailsOpening"
+                android:layout_toEndOf="@+id/placeDetailsSite"
+                android:background="@color/purple_medium"
+                android:text="@string/infoShowMap"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/placeDetailsGrayLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/placeDetailsShowMap"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginEnd="2.5dp"
+                android:layout_marginTop="19dp"
+                android:background="@color/gray_medium"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/placeDetailsMap"
+                android:layout_width="fill_parent"
+                android:layout_height="242.5dp"
+                android:layout_below="@+id/placeDetailsGrayLine1"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/placeDetailsGrayLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/placeDetailsMap"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginEnd="2.5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray_medium"
+                android:orientation="horizontal" />
+
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailRatingIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeDetailsGrayLine2"
+                android:layout_marginTop="30dp"
+                android:text="@string/infoHoleStarIcon"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailRating"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeDetailsGrayLine2"
+                android:layout_marginTop="30dp"
+                android:text="@string/infoPrice"
+                android:textColor="@color/gray_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:layout_below="@+id/placeDetailRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$$$$$"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailPrice"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeDetailRating"
+                android:text="@string/infoMaxRating"
+                android:textColor="@color/gray_medium"
+                android:textSize="15.5dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

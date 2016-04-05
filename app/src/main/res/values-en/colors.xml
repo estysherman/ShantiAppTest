@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="frame_big_marker">#5d0576</color>
+    <color name="black">#ff000000</color>
+    <color name="black_mask">#b23a424a</color>
+    <color name="transparent">#00000000</color>
+    <!--<color name="purple">#ff5e0777</color>-->
+    <color name="choose_purple">#AE82BA</color>
+    <color name="very_light_purple">#FBF7FF</color>
+    <color name="purple_click">#f35a087e</color>
+    <color name="light_purple">#ffb002f7</color>
+    <color name="gray">#ff9f9f9f</color>
+    <color name="red">#CC0000</color>
+    <color name="dark_gray">#ff434b52</color>
+    <color name="light_gray">#BFC4C9</color>
+    <color name="light_gray_search">#e6bfc4c9</color>
+    <color name="green">#ff2bb540</color>
+    <color name="green_click">#ff1c6326</color>
+    <color name="purple_strok">#ff70149b</color>
+    <color name="purple_strok_click">#ff8d649c</color>
+    <color name="purple_button_text">#ffc440f8</color>
+    <color name="chat_editText">#fff5f0f7</color>
+    <color name="side_menu_select">#fff2f3f3</color>
+    <color name="side_menu_purple_select">#fff2f3f3</color>
+    <color name="transparent_dialog">#A2A1AA90</color>
+
+    <!--news-->
+    <color name="purple_home">#5D0576</color>
+    <color name="purple_dark">#2F033b</color>
+    <color name="purple_medium">#A733FF</color>
+    <color name="purple_shines">#9F0AC9</color>
+    <color name="purple_light">#EDD6FF</color>
+    <color name="purple_sgalgal">#F2EAFD</color>
+    <color name="gray_dark">#3A424A</color>
+    <color name="gray_medium">#808994</color>
+    <color name="gray_light">#BFC4C9</color>
+    <color name="gray_afarpar">#EDEAE3</color>
+    <color name="gray_pastel">#E6E6E6</color>
+    <color name="purple_gray">#F5F0F7</color>
+    <color name="green_home">#29B53F</color>
+    <color name="offwhite_dark">#E9E5DC</color>
+    <color name="offwhite_base">#FBFAF8</color>
+
+
+    <color name="purpul_button_background">#B000F7</color>
+    <color name="purpul_button_background_shadow">#1B0923</color>
+    <color name="purpul_button_background_clicked">#2F033b</color>
+    <color name="light_blue_item_choose">#5fcfe1</color>
+</resources>

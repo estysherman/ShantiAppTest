@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="webit.android.shanti.login.signin.CreateUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:text="@string/loginPersonalDetails"
+            android:textColor="@color/gray" />
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginEnd="-10dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="10dp">
+
+
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/baseInfoEmail"
+                    style="@style/general_editText"
+                    android:hint="@string/loginEmail"
+                    android:inputType="textEmailAddress" />
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/baseInfoPassword"
+                    style="@style/general_editText"
+                    android:hint="@string/loginPassword"
+                    android:inputType="textPassword" />
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/baseInfoFirstName"
+                    style="@style/general_editText"
+                    android:hint="@string/loginFirstName"
+                    android:inputType="textPersonName" />
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/baseInfoLastName"
+                    style="@style/general_editText"
+                    android:hint="@string/loginLastName"
+                    android:inputType="textPersonName" />
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/baseInfoShantiName"
+                    style="@style/general_editText"
+                    android:hint="@string/loginShantiName"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                    <!-- <webit.android.shanti.customViews.CustomEditText
+                         style="@style/general_editText"
+                         android:hint="@string/loginCellprefix"
+                         android:layout_width="80dp"
+                         android:layout_marginRight="10dp"
+                         android:id="@+id/baseInfoPhonePrefix" />-->
+                    <webit.android.shanti.customViews.CustomEditText
+                        android:id="@+id/baseInfoPhone"
+                        style="@style/general_editText"
+                        android:layout_width="0dip"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:hint="@string/loginCellphone"
+                        android:inputType="phone" />
+
+                    <webit.android.shanti.customViews.MultiSpinner
+                        android:id="@+id/baseInfoPhonePrefix"
+                        android:layout_width="0dip"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_border"
+                        android:gravity="center"
+                        android:paddingStart="12dp"
+                        android:textCursorDrawable="@drawable/general_cursor"
+                        app:multi_spinner_type="single"
+                        app:search_hint="@string/signUpCountrySearchHint" />
+
+                </LinearLayout>
+
+                <webit.android.shanti.customViews.CustomButton
+                    android:id="@+id/baseInfoCreateUserBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/light_purple_rect"
+                    android:text="@string/loginContinue"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical"
+                    android:paddingTop="35dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="17dp">
+
+                        <webit.android.shanti.customViews.CustomTextView
+                            android:id="@+id/profileInfoUseTermsTxt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="4dp"
+                            android:gravity="center"
+                            android:text="@string/useTermsText1"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--<webit.android.shanti.customViews.AnimationView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="4dp"-->
+        <!--android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

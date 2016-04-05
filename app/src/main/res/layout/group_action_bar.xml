@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="63dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/purple_home">
+
+    <webit.android.shanti.customViews.CustomButton
+        android:id="@+id/groupActionRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/groups_remove_btn"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/groupActionAddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_toStartOf="@+id/groupActionRemove"
+        android:background="@drawable/new_group_action_bar_selector" />
+
+    <ImageView
+        android:id="@+id/groupActionApproval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toStartOf="@+id/groupActionAddNew"
+        android:background="@drawable/approval_group_action_bar_selector" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/groupActionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:text="@string/groupsTitle"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/groupActionBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingStart="9.5dp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/groupActionBackIcon"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/side_menu_right_white" />-->
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/groupActionBackIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/groupsIconAngleRight"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:fontStyle="Icon"
+            app:fontName="simpleclm-medium-webfont.ttf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/groupActionBackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/groupActionBackIcon"
+            android:text="sdsdds"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+        <ImageView
+            android:id="@+id/deleteImg"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/chatBack"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/delete"
+            android:visibility="visible"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

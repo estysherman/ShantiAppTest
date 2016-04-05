@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:weightSum="6"
+    android:orientation="horizontal"
+    android:layout_height="155dp">
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/linear_info"
+        android:orientation="vertical">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/mapFooterUserAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.5dp"
+            android:text="@string/chatNoAddress"
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/mapFooterUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="שמעון ברזילאי"
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/mapFooterUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5dp" />
+        <!--android:text="4 ישראלים + 2 קבוצות ברדיוס שלך."-->
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/mapFooterMoreAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mapFooterUserMoreAbout"
+            android:padding="3dp"
+            android:textColor="@color/green_home"
+            android:textSize="16.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:gravity="center|end"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/mapFooterUserOpenChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/map_footer_green_chat_selector" />
+
+        <ImageView
+            android:id="@+id/mapFooterUserNavigateToUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapFooterUserOpenChat"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/map_footer_navigation_selector"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

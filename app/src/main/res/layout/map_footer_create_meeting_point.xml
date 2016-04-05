@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:editText="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:id="@+id/mapFooterCreateMeetingPoint"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20.5dp"
+        android:text="@string/meetingPointTitle"
+        android:textColor="@color/purple_home"
+        android:textSize="27.5dp" />
+
+    <LinearLayout
+        android:id="@+id/meeting_point_choose_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="7.5dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingTop="3dp">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/meetingPointAngleLeft"
+            android:textColor="@color/purple_home"
+            android:textSize="15dp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/map_footer_meeting_groups_list"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/purple_sgalgal"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/meetingPointAngleRight"
+            android:textColor="@color/purple_home"
+            android:textSize="15dp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/meeting_point_input_border">
+
+            <webit.android.shanti.customViews.CustomTextView
+                xmlns:editText="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map_footer_meeting_time"
+                style="@style/meeting_point_input_edit_text"
+                android:clickable="true"
+                android:padding="0dp"
+                android:text=""
+                android:layout_alignParentEnd="true"
+                editText:withoutPadding="true"/>
+
+
+            <webit.android.shanti.customViews.CustomTextView
+             android:id="@+id/meeting_point_MeetingTime"
+                style="@style/meeting_point_input_text_view"
+                android:text="@string/meetingPointMeetingTime" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/meeting_point_input_border">
+
+            <webit.android.shanti.customViews.CustomEditText
+                xmlns:editText="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map_footer_meeting_setting"
+                style="@style/meeting_point_input_edit_text"
+                android:clickable="true"
+                android:padding="0dp"
+                android:text=""
+                android:layout_alignParentEnd="true"
+                editText:withoutPadding="true"/>
+
+            <webit.android.shanti.customViews.CustomTextView
+                style="@style/meeting_point_input_text_view"
+                android:text="@string/meetingPointSetting" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/meeting_point_input_border">
+
+            <webit.android.shanti.customViews.CustomEditText
+                xmlns:editText="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map_footer_meeting_comments"
+                style="@style/meeting_point_input_edit_text"
+                android:clickable="true"
+                android:padding="0dp"
+                android:text=""
+                android:layout_alignParentEnd="true"
+                editText:withoutPadding="true"/>
+
+            <webit.android.shanti.customViews.CustomTextView
+                style="@style/meeting_point_input_text_view"
+                android:text="@string/meetingPointComments" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <webit.android.shanti.customViews.CustomButton
+        android:clickable="true"
+        android:id="@+id/map_footer_meeting_create"
+        style="@style/general_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/meetingPointCreatePoint" />
+
+</LinearLayout>

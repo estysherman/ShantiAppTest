@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="webit.android.shanti.login.signin.CreateUserActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/signUpSubTitle"
+        android:textColor="@color/gray" />
+
+      <webit.android.shanti.customViews.MultiSpinner
+          android:id="@+id/profileInfoCountry"
+          style="@style/general_AutoComplete"
+          app:search_hint="@string/signUpCountrySearchHint" />
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+        <!--android:id="@+id/profileInfoCountry"-->
+        <!--style="@style/general_AutoComplete" />-->
+
+    <!--<TextView
+        android:textColor="@color/white"
+        android:id="@+id/odeya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="odeya" />
+
+
+    <webit.android.shanti.customViews.CustomButton
+        android:id="@+id/odeyaClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <FrameLayout
+        android:id="@+id/profileInfoBirthDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/profileInfoTextBirthDate"
+            style="@style/general_AutoComplete"
+            android:paddingEnd="25dp"
+            android:text="@string/signUpBirthDate" />
+    </FrameLayout>
+
+    <webit.android.shanti.customViews.MultiSpinner
+        android:id="@+id/profileInfoGender"
+        style="@style/general_AutoComplete" />
+
+    <webit.android.shanti.customViews.MultiSpinner
+        android:id="@+id/profileInfoReligion"
+        style="@style/general_AutoComplete" />
+
+    <webit.android.shanti.customViews.MultiSpinner
+        android:id="@+id/profileInfoLanguages"
+        style="@style/general_AutoComplete"
+        app:multi_spinner_type="multi" />
+
+    <!--<webit.android.shanti.customViews.MultiSpinner-->
+        <!--android:id="@+id/profileInfoReligion"-->
+        <!--style="@style/general_AutoComplete"-->
+        <!--android:background="@drawable/white_block" />-->
+
+    <webit.android.shanti.customViews.CustomButton
+        android:id="@+id/profileInfoRegisterBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/light_purple_rect"
+        android:text="@string/signUpCreateUser"
+        android:textColor="@color/white" />
+
+
+
+
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

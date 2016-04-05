@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chatUserName">אתה נמצא כאן</string>
+    <string name="chatMoreInfo">עוד על </string>
+
+    <string name="chatShowHistory">+הצג מאתמול</string>
+    <string name="chatSend">שלח</string>
+    <string name="chatTo">צ\'אט ל</string>
+    <string name="chatNoAddress">מקום לא ידוע</string>
+    <string name="chatMe">אני</string>
+    <string name="chatError">לא ניתן לפתוח צאט</string>
+    <string name="chatAttachmentError">ארעה שגיאה בצירוף התמונה, נסה שנית מאוחר יותר</string>
+    <string name="chatDeleteMessageAlert">האם אתה רוצה למחוק הודעה זו</string>
+    <string name="chatDeleteMessage">מחק</string>
+    <string name="chatCancelDeleteMessage">ביטול</string>
+    <string name="chatDeleteIcon">&#xf014;</string>
+</resources>

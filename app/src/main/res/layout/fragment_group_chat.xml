@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/group_action_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <webit.android.shanti.customViews.slideuppanel.SlidingUpPanelLayout
+                xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mainLoginSliding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                sothree:umanoAnchorPoint="0.5"
+                sothree:umanoDragView="@+id/mainLoginDragView"
+                sothree:umanoFadeColor="@color/transparent"
+                sothree:umanoPanelHeight="120dp"
+                sothree:umanoParalaxOffset="0dp"
+                sothree:umanoShadowHeight="0dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <!-- MAIN CONTENT -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/group_details_header"></include>
+
+                    <include layout="@layout/group_details_content"></include>
+                </RelativeLayout>
+
+            </FrameLayout>
+                </ScrollView>
+        <!-- SLIDING LAYOUT -->
+        <LinearLayout
+            android:id="@+id/mainLoginDragView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <include layout="@layout/group_details_slider_animation"></include>
+
+            <webit.android.shanti.customViews.ChatView
+                android:id="@+id/chatView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/chatActionBar" />
+        </LinearLayout>
+
+    </webit.android.shanti.customViews.slideuppanel.SlidingUpPanelLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+

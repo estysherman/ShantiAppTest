@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoMainMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/purple_home"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context="webit.android.shanti.FragmentMainInfo">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="@string/verifyCodeEnterCode"
+        android:textColor="@color/gray_light"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/verify_code_square4"
+            style="@style/verification_code_up_status" />
+
+        <View
+            android:id="@+id/verify_code_square3"
+            style="@style/verification_code_up_status" />
+
+        <View
+            android:id="@+id/verify_code_square2"
+            style="@style/verification_code_up_status" />
+
+        <View
+            android:id="@+id/verify_code_square1"
+            style="@style/verification_code_up_status" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layoutDirection="ltr"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--android:id="@+id/verify_code_digit_1"-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:text="1" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_2"-->
+    <!--android:text="2" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_3"-->
+    <!--android:text="3" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layoutDirection="ltr"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_4"-->
+    <!--android:text="4" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_5"-->
+    <!--android:text="5" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_6"-->
+    <!--android:text="6" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layoutDirection="ltr"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_7"-->
+    <!--android:text="7" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_8"-->
+    <!--android:text="8" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_9"-->
+    <!--android:text="9" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layoutDirection="ltr"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:text="" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_digit_0"-->
+    <!--android:text="0" />-->
+
+    <!--<webit.android.shanti.customViews.CustomTextView-->
+    <!--style="@style/verification_code_button"-->
+    <!--android:id="@+id/verify_code_back_btn"-->
+    <!--android:background="@drawable/verifivation_delete"/>-->
+    <!--</LinearLayout>-->
+
+    <GridView
+        android:id="@+id/verifyGridView"
+        android:layout_width="291.5dp"
+        android:layout_height="361dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:numColumns="3"/>
+</LinearLayout>
+
+

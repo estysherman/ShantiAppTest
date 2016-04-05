@@ -1,0 +1,25 @@
+<resources>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">מייל</string>
+    <string name="prompt_password">סיסמה (אופציונלי)</string>
+    <string name="action_sign_in">היכנס או הרשם</string>
+    <string name="action_sign_in_short">כניסה</string>
+    <string name="plus_sign_out">החלף חשבון Google+</string>
+    <string name="plus_disconnect">התנתק מ Google+</string>
+    <string name="error_invalid_email">מייל אינו תקין</string>
+    <string name="error_invalid_password">סיסמה קצרה מדי</string>
+    <string name="error_incorrect_password">הסיסמה לא נכונה</string>
+    <string name="error_field_required">זהו שדה חובה</string>
+    <string name="login">כניסה</string>
+    <string name="createUser">הרשמה</string>
+    <string name="DeviceDisplayHebrew">עברית</string>
+    <string name="DeviceDisplayEnglish">english</string>
+    <string name="DeviceDisplaySpanish">Español</string>
+    <string name="DeviceDisplayFrench">français</string>
+    <string name="errorPasswordTryAgainIn">נסה שוב בעוד: </string>
+    <string name="errorPasswordRemaindMinutes"> דקות</string>
+    <string name="errorPasswordRemaindSecond"> שניות</string>
+
+</resources>

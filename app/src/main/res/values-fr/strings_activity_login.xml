@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe (facultatif)</string>
+    <string name="action_sign_in">Connectez-vous ou inscrivez-vous</string>
+    <string name="action_sign_in_short">Accès</string>
+    <string name="plus_sign_out">Changer de compte Google+</string>
+    <string name="plus_disconnect">Déconnecter de Google+</string>
+    <string name="error_invalid_email">Cette adresse email est invalide</string>
+    <string name="error_invalid_password">Ce mot de passe est trop court</string>
+    <string name="error_incorrect_password">Ce mot de passe est incorrect</string>
+    <string name="error_field_required">Ce champ est requis</string>
+    <string name="login">Accès</string>
+    <string name="createUser">Inscription</string>
+    <string name="DeviceDisplayHebrew">עברית</string>
+    <string name="DeviceDisplayEnglish">english</string>
+    <string name="DeviceDisplaySpanish">Español</string>
+    <string name="DeviceDisplayFrench">français</string>
+    <string name="errorPasswordTryAgainIn">Try again in: </string>
+    <string name="errorPasswordRemaindMinutes"> minutes</string>
+    <string name="errorPasswordRemaindSecond"> seconds</string>
+
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/user_photo"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/sideMenuUserImg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/user_photo" />-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:background="@color/black_mask" />
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/sideMenuUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="33sp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/sideMenuUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15.5sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:alpha="0.8">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sideMenuMainArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sideMenuUserImg"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuMain"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuMain" />
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuSearch"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuSearch" />
+
+
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuMessagesOutBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:drawableEnd="@drawable/side_menu_left"
+                        android:text="@string/sideMenuNotifications" />
+
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuGroups"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuGroups" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuInformation"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuInformation" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuPersonalAreaOutBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:drawableEnd="@drawable/side_menu_left"
+                        android:text="@string/personalArea" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sideMenuPersonalArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sideMenuMainArea"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuPersonalAreaInnerBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:drawablePadding="15dp"
+                        android:drawableStart="@drawable/side_menu_right"
+                        android:text="@string/personalArea" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuMyProfile"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/personalAreaMyProfile" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuSearchPeoplesSettings"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/personalAreaSearchPeopleSettings" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuSearchInfoSettings"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:enabled="false"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/personalAreaSearchInfoSettings"
+                        android:textColor="#999999" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuMyPictures"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:enabled="false"
+                        android:text="@string/personalAreaMyPicture"
+                        android:textColor="#999999" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuDisplaySettings"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:enabled="false"
+                        android:text="@string/personalAreaInfoSettings"
+                        android:textColor="#999999" />
+
+                    <!--<webit.android.shanti.customViews.CustomButton-->
+                        <!--android:id="@+id/sideMenuLogOut1"-->
+                        <!--style="@style/side_menu_button"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:text="@string/personalAreaLogOut" />-->
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuLogOut2"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/personalAreaLogOut" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sideMenuMessages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sideMenuMainArea"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuMessagesInnerBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:drawablePadding="15dp"
+                        android:drawableStart="@drawable/side_menu_right"
+                        android:text="@string/sideMenuNotifications" />
+
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuPraveMessagessBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuPraveNotifications" />
+
+                    <webit.android.shanti.customViews.CustomButton
+                        android:id="@+id/sideMenuApprovalBtn"
+                        style="@style/side_menu_button"
+                        android:layout_width="fill_parent"
+                        android:text="@string/sideMenuApprovalNotifications" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_mask">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <ImageView
+        android:id="@+id/groupBg"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/love" />
+
+    <TextView
+        android:id="@+id/listItemGroupBg"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@color/black_mask" />
+
+ <RelativeLayout
+        android:id="@+id/contentMyChoose"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="1dp"
+        android:background ="@color/gray_"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:textAlignment="center">
+
+        <RelativeLayout
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/group_members_num" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/groupFriendsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingStart="7dp"
+                android:text="1" />
+        </RelativeLayout>
+
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/num"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="GroupNameGroupNhf"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/groupInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupName"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="GroupInfo"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/groupsIconAngleLeft"
+        android:textColor="@color/white"
+        android:layout_marginEnd="14dp"
+        app:fontStyle="Icon"
+        app:fontName="fontawesome-webfont.ttf" />
+   
+
+</RelativeLayout>

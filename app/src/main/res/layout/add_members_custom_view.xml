@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="14.5dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/addMembersAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="10dp"
+            android:text="@string/addMembersAttach"
+            android:textColor="@color/gray_medium"
+            android:textSize="15dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/addMembersMembersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/add_member_text_paddingTop"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            android:textColor="@color/gray_medium"
+            android:textSize="@dimen/add_member_text_textSize" />
+
+
+    </RelativeLayout>
+
+    <webit.android.shanti.customViews.ExpandableHeightListView
+        android:id="@+id/addMembersAllMembersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/addMembersSearchTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <webit.android.shanti.customViews.CustomEditText
+            android:id="@+id/addMembersSearchText"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="8"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/addMembersSearchHint"
+            android:paddingStart="3dp"
+            android:textColor="@color/gray_medium"
+            android:textSize="@dimen/profile_group_name_textSize" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/addMembersSearch"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="@drawable/edit_text_border"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/addMembersSearchIcon"
+            android:textColor="@color/gray_medium"
+            android:textSize="16.5sp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <webit.android.shanti.customViews.ExpandableHeightListView
+            android:id="@+id/addMembersAddedMembersList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </webit.android.shanti.customViews.ExpandableHeightListView>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/group_profile_action_bar" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/groupEditPageScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_afarpar">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/gray_afarpar"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/offwhite_base"
+                android:orientation="horizontal"
+                android:paddingEnd="7dp"
+                android:paddingStart="15dp"
+                android:paddingTop="22dp">
+
+                <RelativeLayout
+                    android:layout_gravity="start"
+                    android:layout_width="125dp"
+                    android:background="@color/offwhite_base"
+                    android:layout_height="125dp">
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerInParent="true"
+                        android:alpha="0.2"
+
+                        android:background="@color/offwhite_base" />
+
+
+                    <com.joooonho.SelectableRoundedImageView
+                        android:id="@+id/groupEditImage"
+                        android:layout_width="119dp"
+                        android:layout_height="119dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/love"
+                        app:sriv_left_bottom_corner_radius="24dp"
+                        android:background="@color/offwhite_base"
+                        app:sriv_left_top_corner_radius="24dp"
+                        app:sriv_right_bottom_corner_radius="24dp"
+                        app:sriv_right_top_corner_radius="24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <webit.android.shanti.customViews.CustomEditText
+                        android:id="@+id/groupEditGroupName"
+                        android:layout_width="158dp"
+                        android:layout_height="31dp"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="4.5dp"
+                        android:layout_toStartOf="@+id/groupEditRemoveGroup"
+                        android:background="@drawable/group_edit_input_background"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        app:withoutPadding="true" />
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/groupEditRemoveGroup"
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/group_edit_input_background"
+                        android:gravity="center"
+                        android:text="@string/groupEditRemoveGroup"
+                        android:textColor="@color/gray_dark"
+                        app:fontStyle="Icon"/>
+
+
+                    <!-- <webit.android.shanti.customViews.CustomEditText
+                         android:id="@+id/groupEditGroupName"
+                         android:layout_width="167.5dp"
+                         android:textColor="@color/black"
+                         android:layout_height="31dp"
+                         android:layout_marginLeft="4.5dp"
+                         android:layout_toRightOf="@+id/groupEditRemoveGroup"
+                         android:background="@drawable/group_edit_input_background"
+                         android:hint="fsdfsdfsdfsdf"
+                         android:textColorHint="@color/green"
+                         android:text="קבוצת צביקה"
+                         android:textSize="19sp" />-->
+
+                    <RadioGroup
+                        android:id="@+id/groupEditGroupType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/groupEditGroupName"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                    </RadioGroup>
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/groupEditGroupImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/groupEditGroupType"
+                        android:gravity="start"
+                        android:text="@string/groupEditImage"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/profile_group_name_textSize" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/groupEditGroupImage"
+                        android:gravity="center"
+                        android:weightSum="7"
+                        android:orientation="horizontal">
+
+                        <webit.android.shanti.customViews.CustomTextView
+                            android:id="@+id/groupEditImageRetake"
+                            android:layout_width="0dip"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groupEditImageRetake"
+                            android:gravity="center"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/edit_group_text_textSize" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="26dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray_dark" />
+
+
+                        <webit.android.shanti.customViews.CustomTextView
+                            android:id="@+id/groupEditImageReplace"
+                            android:layout_width="0dip"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groupEditImageReplace"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/edit_group_text_textSize" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="26dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/gray_dark" />
+
+                        <webit.android.shanti.customViews.CustomTextView
+                            android:id="@+id/groupEditImageDelete"
+                            android:layout_width="0dip"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groupEditImageDelete"
+                            android:gravity="center"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/edit_group_text_textSize" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/offwhite_base"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingEnd="22dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp">
+
+                <webit.android.shanti.customViews.CustomTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="@string/groupEditMoreAbout"
+                    android:textColor="@color/black"
+                    android:textSize="16.5sp" />
+
+                <webit.android.shanti.customViews.CustomEditText
+                    android:id="@+id/groupEditComments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/group_edit_input_background"
+                    android:textColor="@color/black"
+                    android:maxHeight="96dp"
+                    android:minHeight="50dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="rh dfgh dgfh dfgh dfgdfga WE DZAWEI M"
+                    android:textSize="@dimen/edit_group_text_textSize" />
+                <!--<webit.android.shanti.customViews.CustomEditText-->
+                    <!--android:id="@+id/groupEditComments"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="start"-->
+                    <!--android:background="@drawable/group_edit_input_background"-->
+
+                    <!--android:padding="50dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/edit_group_text_textSize" />-->
+
+            </LinearLayout>
+
+            <View style="@style/shadow_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/offwhite_base"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="41.5dp"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/profileGroupFriends" />
+
+                <webit.android.shanti.customViews.ExpandableHeightListView
+                    android:id="@+id/groupEditFriendsList"
+                    style="@style/general_list_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="12dp">
+
+                </webit.android.shanti.customViews.ExpandableHeightListView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <webit.android.shanti.customViews.AddMembersCustomView
+                        android:id="@+id/groupEditAddMembers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="start"
+                        app:pageScroller="@+id/groupEditPageScroller" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View style="@style/shadow_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="211dp"
+        android:layout_gravity="center"
+        android:background="@color/gray_afarpar"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/placeItemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/place_empty_image" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19.5dp"
+        android:layout_marginStart="28.5dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="16dp">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="אל גאוצ'ו / aassfd"
+            android:textColor="@color/purple_home"
+            android:textSize="19.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/placeItemName"
+            android:layout_marginBottom="15.5dp"
+            android:layout_marginTop="10dp"
+            android:text="בשרים, אוכל"
+            android:textColor="@color/gray_medium"
+            android:textSize="19.5dp" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemAddressIcon"
+            style="@style/place_details_icon"
+            android:layout_below="@+id/placeItemInfo"
+            android:text="@string/infoAddressIcon"
+            android:textSize="19.5dp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemAddress"
+            style="@style/place_details_text"
+            android:layout_below="@+id/placeItemInfo"
+            android:textSize="19.5dp"
+            android:layout_toEndOf="@+id/placeItemAddressIcon"
+            android:text="address"/>
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemPhoneIcon"
+            style="@style/place_details_icon"
+            android:layout_below="@+id/placeItemAddress"
+            android:layout_marginTop="11.5dp"
+            android:textSize="19.5dp"
+            android:text="@string/infoPhoneIcon"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeItemPhone"
+            android:layout_marginTop="11.5dp"
+            android:textSize="19.5dp"
+            style="@style/place_details_text"
+            android:layout_below="@+id/placeItemAddress"
+            android:layout_toEndOf="@+id/placeItemPhoneIcon"
+            android:text="+ phone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeItemPhoneIcon"
+            android:layout_marginTop="23dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeItemReviewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="14 Review"
+                android:textColor="@color/gray_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/infoSeparator"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="$$$$$"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/infoSeparator"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeItemRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoHoleStarIcon"
+                android:textColor="@color/purple_medium"
+                android:textSize="15.5dp"
+                app:fontStyle="Icon"
+                app:fontName="fontawesome-webfont.ttf" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

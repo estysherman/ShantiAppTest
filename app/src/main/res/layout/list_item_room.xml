@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp">
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/messagesTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="dffd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="4dp"
+        android:width="100dp" />
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/messagesUserImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:sriv_border_color="@color/gray"
+        app:sriv_border_width="1dp"
+        app:sriv_left_bottom_corner_radius="10dp"
+        app:sriv_left_top_corner_radius="10dp"
+        app:sriv_right_bottom_corner_radius="10dp"
+        app:sriv_right_top_corner_radius="10dp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/gray"
+    android:layout_height="0.5dp"/>
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/messagesUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="fdfdgdfgdgfdgdfgfdg"
+        android:layout_toEndOf="@+id/messagesUserImage"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:id="@+id/messagesLastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagesUserName"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/messagesUserImage"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="mimi"
+        android:textColor="@color/gray_medium"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

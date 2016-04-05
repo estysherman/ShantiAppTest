@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/info_main_background"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/inoSubjectBtnIcon"
+            style="@style/info_main_button_icon"
+            android:text="fggfgf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/inoSubjectBtnText"
+            style="@style/info_main_button_text"
+            android:text="fggfgf" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

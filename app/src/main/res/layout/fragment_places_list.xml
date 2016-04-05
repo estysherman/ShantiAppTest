@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoMainMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="webit.android.shanti.FragmentMainInfo">
+
+    <include layout="@layout/info_action_bar" />
+
+    <webit.android.shanti.customViews.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="29.5dp"
+        android:background="@color/purple_home"
+        android:gravity="center_vertical|right"
+        android:text="some text"
+        android:textColor="@color/white"
+        android:textSize="15.5dp"></webit.android.shanti.customViews.CustomTextView>
+
+    <ListView
+        android:id="@+id/placesList"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>
+
+

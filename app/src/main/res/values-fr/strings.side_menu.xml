@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sideMenuNews">Quoi de neuf?</string>
+    <string name="sideMenuSelfArea">Espace personnel</string>
+    <string name="sideMenuGroups">Groupes</string>
+    <string name="sideMenuNotifications">Messages</string>
+    <string name="sideMenuPraveNotifications">Messages précédents</string>
+    <string name="sideMenuApprovalNotifications">demandes de ralliement reçues</string>
+    <string name="sideMenuInformation">Information</string>
+    <string name="sideMenuMain">Carte</string>
+    <string name="sideMenuSearch">Recherche de personnes</string>
+
+</resources>

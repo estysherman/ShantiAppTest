@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapFooterCreateMeetingPoint"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true">
+    <ImageView
+        android:id="@+id/meetingDetailsOpenChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/map_footer_green_chat_selector" />
+
+    <ImageView
+        android:id="@+id/meetingDetailsNavigateToMeetingPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/meetingDetailsOpenChat"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/map_footer_navigation_selector"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="230.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/meetingDetailsGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginStart="60dp"
+            android:lines="1"
+            android:maxWidth="180dp"
+            android:text="@string/meetingDetailsGroup"
+            android:textColor="@color/green_home"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/meetingDetailsTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="start|center"
+                android:text="22:45"
+                android:textColor="@color/green_home"
+                android:textSize="20dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/meetingDetailsSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/meetingDetailsTime"
+                android:text="@string/meetingDetailsSetting" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/meetingDetailsComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/meetingDetailsSetting"
+                android:text="@string/meetingDetailsComments" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/meetingDetailsTimeToArrived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/meetingDetailsComments"
+                android:text="@string/meetingDetailsCalculateTime" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

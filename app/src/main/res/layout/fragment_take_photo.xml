@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/takePhotoWelcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:fontStyle="Thin"
+            android:text="@string/takePhotoWelcome"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/gray_medium">
+
+            <ImageView
+                android:id="@+id/takePhotoImageProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/takePhotoComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            app:fontStyle="Thin"
+            android:text="@string/takePhotoComment"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+
+        <webit.android.shanti.customViews.CustomButton
+            android:id="@+id/TakePhotoOpenCameraBtn"
+            style="@style/general_button"
+            android:background="@drawable/btn_tack_photo"
+            android:layout_marginTop="16dp"
+            app:fontStyle="Thin"
+            android:text="@string/takePhotoTackPicture" />
+
+        <webit.android.shanti.customViews.CustomButton
+            android:id="@+id/takePhotoChooseFileBtn"
+            style="@style/general_button"
+            app:fontStyle="Thin"
+            android:background="@drawable/btn_tack_photo"
+            android:layout_marginTop="10dp"
+            android:text="@string/takePhotoChooseFile" />
+
+        <webit.android.shanti.customViews.CustomButton
+            android:id="@+id/takePhotoFinishBtn"
+            style="@style/general_button"
+            app:fontStyle="Thin"
+            android:background="@drawable/btn_tack_photo"
+            android:text="@string/takePhotoYesAndFinish"
+            android:visibility="gone" />
+
+        <webit.android.shanti.customViews.CustomButton
+            android:id="@+id/takePhotoAgainBtn"
+            style="@style/general_button"
+            app:fontStyle="Thin"
+            android:background="@drawable/btn_tack_photo"
+            android:text="@string/takePhotoCaptureAgain"
+            android:visibility="gone" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/takePhotoSkipBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:text="@string/takePhotoAddPictureLater"
+            app:fontStyle="Thin"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,305 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite_dark"
+    android:orientation="vertical">
+
+    <include layout="@layout/group_profile_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profileScroll"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/offwhite_base"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16.5dp">
+
+                    <View
+                        android:layout_width="102dp"
+                        android:layout_height="102dp"
+                        android:layout_centerInParent="true"
+                        android:alpha="0.2"
+                        android:background="@color/offwhite_base" />
+
+                    <com.joooonho.SelectableRoundedImageView
+                        android:id="@+id/myProfileUserImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/offwhite_base"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/user_photo"
+                        app:sriv_left_bottom_corner_radius="24dp"
+                        app:sriv_left_top_corner_radius="24dp"
+                        app:sriv_right_bottom_corner_radius="24dp"
+                        app:sriv_right_top_corner_radius="24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/groupEditGroupImage"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16.5dp"
+                    android:layout_marginStart="10dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/myProfileImageRetake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/groupEditImageRetake"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/gray_dark" />
+
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/myProfileImageReplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/groupEditImageReplace"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/gray_dark" />
+
+                    <webit.android.shanti.customViews.CustomTextView
+                        android:id="@+id/myProfileDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/groupEditImageDelete"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/shadow_line"
+                android:layout_marginBottom="7.5dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/my_profile_container"
+                        android:layout_marginTop="0dp">
+
+                        <RelativeLayout style="@style/my_profile_header">
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                style="@style/my_profile_header_title"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/myProfileDetails" />
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                android:id="@+id/myProfileEditDetails"
+                                style="@style/my_profile_header_edit"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+
+                        <LinearLayout style="@style/my_profile_inputs_container">
+
+                            <webit.android.shanti.customViews.CustomEditText
+                                android:id="@+id/myProfileFirstName"
+                                style="@style/my_profile_input"
+                                android:hint="@string/myProfileFirstName"
+                                android:imeOptions="actionDone"
+                                android:inputType="textEmailAddress" />
+
+                            <webit.android.shanti.customViews.CustomEditText
+                                android:id="@+id/myProfileLastName"
+                                style="@style/my_profile_input"
+                                android:hint="@string/myProfileLastName"
+                                android:imeOptions="actionDone"
+                                android:inputType="textEmailAddress" />
+
+                            <!--<webit.android.shanti.customViews.CustomEditText-->
+                            <!--android:id="@+id/myProfilePhone"-->
+                            <!--style="@style/my_profile_input"-->
+                            <!--android:hint="@string/myProfilePhone"-->
+                            <!--android:imeOptions="actionDone"-->
+                            <!--android:inputType="phone" />-->
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:layoutDirection="rtl"
+                                android:orientation="horizontal"
+                                android:weightSum="6">
+                                <!-- <webit.android.shanti.customViews.CustomEditText
+                                     style="@style/general_editText"
+                                     android:hint="@string/loginCellprefix"
+                                     android:layout_width="80dp"
+                                     android:layout_marginRight="10dp"
+                                     android:id="@+id/baseInfoPhonePrefix" />-->
+                                <webit.android.shanti.customViews.CustomEditText
+                                    android:id="@+id/myProfilePhone"
+                                    style="@style/my_profile_input"
+                                    android:layout_width="0dip"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="4"
+                                    android:hint="@string/loginCellphone"
+                                    android:inputType="phone" />
+
+                                <webit.android.shanti.customViews.MultiSpinner
+                                    android:id="@+id/myProfilePhonePrefix"
+                                    android:layout_width="0dip"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/my_profile_edit_text_background"
+                                    android:gravity="center"
+                                    android:paddingEnd="12dp"
+                                    android:textCursorDrawable="@drawable/general_cursor"
+                                    app:multi_spinner_type="single"
+                                    app:search_hint="@string/signUpCountrySearchHint" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/shadow_line" />
+
+                    <LinearLayout style="@style/my_profile_container">
+
+                        <RelativeLayout style="@style/my_profile_header">
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                style="@style/my_profile_header_title"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/myProfilePersonalProfile" />
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                android:id="@+id/myProfileEditPersonalProfile"
+                                style="@style/my_profile_header_edit"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+
+                        <LinearLayout style="@style/my_profile_inputs_container">
+
+                            <!--<webit.android.shanti.customViews.MultiSpinner
+                                android:id="@+id/myProfileCountry"
+                                style="@style/my_profile_spinner"
+                                app:search_hint="@string/signUpCountrySearchHint" />-->
+
+                            <FrameLayout
+                                android:id="@+id/myProfileBirthDate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <webit.android.shanti.customViews.CustomTextView
+                                    android:id="@+id/myProfileTextBirthDate"
+                                    style="@style/my_profile_spinner"
+                                    android:text="@string/signUpBirthDate" />
+                            </FrameLayout>
+
+                            <webit.android.shanti.customViews.MultiSpinner
+                                android:id="@+id/myProfileGender"
+                                style="@style/my_profile_spinner" />
+
+                            <!--<webit.android.shanti.customViews.MultiSpinner-->
+                            <!--android:id="@+id/myProfileReligion"-->
+                            <!--style="@style/my_profile_spinner"-->
+                            <!--android:background="@drawable/white_block" />-->
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/shadow_line" />
+
+                    <LinearLayout style="@style/my_profile_container">
+
+                        <RelativeLayout style="@style/my_profile_header">
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                style="@style/my_profile_header_title"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/myProfileCompletesDetails" />
+
+                            <webit.android.shanti.customViews.CustomTextView
+                                android:id="@+id/myProfileEditCompletesDetails"
+                                style="@style/my_profile_header_edit"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+
+                        <LinearLayout style="@style/my_profile_inputs_container">
+
+                            <webit.android.shanti.customViews.CustomEditText
+                                android:id="@+id/myProfileJob"
+                                style="@style/my_profile_spinner"
+                                android:hint="@string/myProfileJob"
+                                android:imeOptions="actionDone"
+                                android:inputType="textEmailAddress" />
+
+                            <webit.android.shanti.customViews.CustomEditText
+                                android:id="@+id/myProfileHobby"
+                                style="@style/my_profile_spinner"
+                                android:hint="@string/myProfileHobby"
+                                android:imeOptions="actionDone"
+                                android:inputType="textEmailAddress" />
+
+                            <webit.android.shanti.customViews.MultiSpinner
+                                android:id="@+id/myProfileLanguage"
+                                style="@style/my_profile_spinner"
+                                app:multi_spinner_type="multi" />
+
+                            <webit.android.shanti.customViews.CustomEditText
+                                android:id="@+id/myProfileMoreAbout"
+                                style="@style/my_profile_spinner"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/myProfileMoreInfo"
+                                android:imeOptions="actionDone"
+                                android:inputType="textMultiLine"
+                                android:minHeight="51dp"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                android:singleLine="false" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/shadow_line" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

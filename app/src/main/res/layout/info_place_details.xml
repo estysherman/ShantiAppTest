@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/info_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="233.5dp"
+        android:background="@color/gray_afarpar"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/placeDetailsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/place_empty_image" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeDetailsPrevPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8.5dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/infoPrev"
+            android:textColor="@color/white"
+            android:textSize="52dp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+        <webit.android.shanti.customViews.CustomTextView
+            android:id="@+id/placeDetailsNextPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/infoNext"
+            android:textColor="@color/white"
+            android:textSize="52dp"
+            app:fontStyle="Icon"
+            app:fontName="fontawesome-webfont.ttf" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="67.5dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="@color/gray_dark"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:paddingStart="12.5dp"
+            android:paddingEnd="22.5dp">
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אל גאוצ'ו / aassfd"
+                android:textColor="@color/white"
+                android:textSize="19.5dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="בשרים, אוכל"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <webit.android.shanti.customViews.CustomTextView
+                android:id="@+id/placeDetailsPictureNumberCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="3/5"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <webit.android.shanti.customViews.CustomButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.49"
+            android:background="@color/white"
+            android:text="@string/infoDetailsReview"
+            android:textColor="@color/purple_home"
+            android:textSize="19dp" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.02"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="23.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/gray_light" />
+        </RelativeLayout>
+
+        <webit.android.shanti.customViews.CustomButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.49"
+            android:background="@color/white"
+            android:text="@string/infoDetailsInfo"
+            android:textColor="@color/purple_home"
+            android:textSize="19dp" />
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/placeDetailsFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/info_place_details_info" />
+
+        <include layout="@layout/info_place_details_review" />
+    </ViewFlipper>
+
+
+</LinearLayout>
+
