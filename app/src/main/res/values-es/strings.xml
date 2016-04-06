@@ -378,7 +378,7 @@
     <string name="notificationGroupChatDialogMessage">¿Le gustaría ir al mensaje?</string>
     <string name="messagesEmptyList">No tiene mensajes nuevos actualmente</string>
 
-    <!--Search users-->_
+    <!--Search users-->
     <string name="searchEmptyList">No hay resultados de búsqueda. \n Type una nueva búsqueda.</string>
     <string name="searchSearchIcon">&#xf002;</string>
     <string name="searchABCOrderIcon">&#xf0b0;</string>
@@ -387,6 +387,9 @@
     <string name="far">Distancia</string>
     <string name="alphabetical">alfabético</string>
     <string name="kilometer">ק\"מ</string>
+    <string name="alert">הודעה</string>
+    <string name="Maintains_a_list_of_people">טוען רשימת אנשים</string>
+    <string name="o.k.">אישור</string>
 
     <!--Info-->
     <string name="infoActionBarMap">Mapa</string>

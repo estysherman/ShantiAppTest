@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShantiAppTestUs.iml" filepath="$PROJECT_DIR$/ShantiAppTestUs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShantiAppTest.iml" filepath="$PROJECT_DIR$/ShantiAppTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -392,6 +392,9 @@
     <string name="far">Distance</string>
     <string name="alphabetical">alphabetical</string>
     <string name="kilometer">km</string>
+    <string name="alert">Message</string>
+    <string name="Maintains_a_list_of_people">Loading users list</string>
+    <string name="o.k.">Confirm</string>
 
     <!--Info-->
     <string name="infoActionBarMap">Map</string>
