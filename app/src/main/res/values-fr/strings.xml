@@ -385,6 +385,9 @@
     <string name="far">Distance</string>
     <string name="alphabetical">alphabétique</string>
     <string name="kilometer">ק\"מ</string>
+    <string name="alert">הודעה</string>
+    <string name="Maintains_a_list_of_people">טוען רשימת אנשים</string>
+    <string name="o.k.">אישור</string>
 
     <!--Info-->
     <string name="infoActionBarMap">Carte</string>
