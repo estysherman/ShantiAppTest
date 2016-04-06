@@ -194,7 +194,7 @@ public class TakePhotoFragment extends SignUpBaseFragment implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.takePhotoSkipBtn://הוסף מאוחר יותר
-                Common.user.setNvImage(User.defaultUserImageUrl);
+                Common.user.setNvImage(null);
                 initFragment(MoreInfoFragment.getInstance(), getString(R.string.moreInfoTitle));//עובר למסך הבא
                 break;
             case R.id.takePhotoImageProfile://בלחיצה על תמונת פרופיל

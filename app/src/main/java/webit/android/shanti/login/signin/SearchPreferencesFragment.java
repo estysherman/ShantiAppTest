@@ -322,6 +322,7 @@ public class SearchPreferencesFragment extends SignUpBaseFragment {
             DeviceLanguagete = 1;
         else if (DeviceLanguage.equals(getString(R.string.DeviceDisplayEnglish)))
         DeviceLanguagete = 2;
+        Common.user = null;
         new GeneralTask(getActivity(), new UseTask() {
             @Override
             public void doAfterTask(String result) {
