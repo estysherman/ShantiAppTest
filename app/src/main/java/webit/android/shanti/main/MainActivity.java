@@ -92,7 +92,7 @@ import webit.android.shanti.main.personal.FullScreenMyProfileImage;
 import webit.android.shanti.main.personal.MyProfileFragment;
 
 public class MainActivity extends FragmentActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, View.OnTouchListener {
-
+ private int checkpull;
 
     private String lastFragmentInStack = "";
     private static Fragment mfrargment;
