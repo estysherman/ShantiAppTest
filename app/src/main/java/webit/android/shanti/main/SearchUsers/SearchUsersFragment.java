@@ -50,6 +50,7 @@ import webit.android.shanti.main.map.MapFragment;
 public class SearchUsersFragment extends MainBaseFragment implements View.OnClickListener, AbsListView.OnScrollListener {
 
     public static SearchUsersFragment instance = null;
+    public int push;
 
     private enum ListType {
         ALL_SHANTI_USERS_LIST,
